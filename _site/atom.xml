@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Min Yang Jung</title>
- <link href="http://127.0.0.1:4000/atom.xml" rel="self"/>
- <link href="http://127.0.0.1:4000/"/>
- <updated>2021-01-17T00:54:11-08:00</updated>
- <id>http://127.0.0.1:4000</id>
+ <link href="/atom.xml" rel="self"/>
+ <link href="/"/>
+ <updated>2021-01-17T01:02:12-08:00</updated>
+ <id></id>
  <author>
    <name>Min Yang Jung</name>
    <email>contact@minyangjung.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Introducing Lanyon</title>
-   <link href="http://127.0.0.1:4000/2020/04/03/introducing-lanyon/"/>
+   <link href="/2020/04/03/introducing-lanyon/"/>
    <updated>2020-04-03T00:00:00-07:00</updated>
-   <id>http://127.0.0.1:4000/2020/04/03/introducing-lanyon</id>
+   <id>/2020/04/03/introducing-lanyon</id>
    <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
@@ -59,9 +59,9 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://127.0.0.1:4000/2020/04/02/example-content/"/>
+   <link href="/2020/04/02/example-content/"/>
    <updated>2020-04-02T00:00:00-07:00</updated>
-   <id>http://127.0.0.1:4000/2020/04/02/example-content</id>
+   <id>/2020/04/02/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -192,9 +192,9 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://127.0.0.1:4000/2020/04/01/whats-jekyll/"/>
+   <link href="/2020/04/01/whats-jekyll/"/>
    <updated>2020-04-01T00:00:00-07:00</updated>
-   <id>http://127.0.0.1:4000/2020/04/01/whats-jekyll</id>
+   <id>/2020/04/01/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -209,9 +209,9 @@
  
  <entry>
    <title>Contact</title>
-   <link href="http://127.0.0.1:4000/2020/01/19/untitled/"/>
+   <link href="/2020/01/19/untitled/"/>
    <updated>2020-01-19T00:38:31-08:00</updated>
-   <id>http://127.0.0.1:4000/2020/01/19/untitled</id>
+   <id>/2020/01/19/untitled</id>
    <content type="html">&lt;p&gt;I am reachable via &lt;a href=&quot;mailto:contact@minyangjung.com&quot;&gt;contact@minyangjung.com&lt;/a&gt; or LinkedIn.&lt;/p&gt;
 
 </content>
@@ -219,9 +219,9 @@
  
  <entry>
    <title>Career</title>
-   <link href="http://127.0.0.1:4000/2020/01/18/career/"/>
+   <link href="/2020/01/18/career/"/>
    <updated>2020-01-18T23:25:28-08:00</updated>
-   <id>http://127.0.0.1:4000/2020/01/18/career</id>
+   <id>/2020/01/18/career</id>
    <content type="html">&lt;p&gt;My work experience and educational background can be found on &lt;a href=&quot;https://www.linkedin.com/in/min-yang-jung-763b5839/&quot;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
 
 </content>
@@ -229,9 +229,9 @@
  
  <entry>
    <title>Writing Better Embedded Software</title>
-   <link href="http://127.0.0.1:4000/2019/03/10/writing-better-embedded-software/"/>
+   <link href="/2019/03/10/writing-better-embedded-software/"/>
    <updated>2019-03-10T20:04:54-07:00</updated>
-   <id>http://127.0.0.1:4000/2019/03/10/writing-better-embedded-software</id>
+   <id>/2019/03/10/writing-better-embedded-software</id>
    <content type="html">&lt;p&gt;I came across a video recording of a &lt;a href=&quot;https://isocpp.org/blog/2019/03/writing-better-embedded-software-dan-saks-keynote-meeting-embedded-2018&quot;&gt;key note talk by Dan Saks&lt;/a&gt; from Meeting Embedded 2018.  Dan Saks, who served as secretary of the ANSI and ISO C++ standards committee, talks about embedded software development around C and C++.  Some of the topics he addresses include the definition of embedded systems, the barriers (in mindset) for embedded/C developers to transition from C to C++, and his approaches to introducing C++ to embedded/C developers based on his experience.&lt;/p&gt;
 
 &lt;p&gt;This talk was interesting to me because he delineated the characteristics of embedded systems, design considerations that embedded software developers typically consider (e.g., power budget, thermal effects), and how/what embedded software developers think.&lt;/p&gt;
@@ -246,9 +246,9 @@
  
  <entry>
    <title>Publications</title>
-   <link href="http://127.0.0.1:4000/2019/01/24/publications/"/>
+   <link href="/2019/01/24/publications/"/>
    <updated>2019-01-24T07:26:12-08:00</updated>
-   <id>http://127.0.0.1:4000/2019/01/24/publications</id>
+   <id>/2019/01/24/publications</id>
    <content type="html">&lt;h2 id=&quot;journalsconferences&quot;&gt;Journals/Conferences&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -425,9 +425,9 @@ Committee: &lt;a href=&quot;http://www.cs.jhu.edu/~rht&quot;&gt;Dr. Russell H. T
  
  <entry>
    <title>About Me</title>
-   <link href="http://127.0.0.1:4000/2019/01/24/about-me/"/>
+   <link href="/2019/01/24/about-me/"/>
    <updated>2019-01-24T06:48:40-08:00</updated>
-   <id>http://127.0.0.1:4000/2019/01/24/about-me</id>
+   <id>/2019/01/24/about-me</id>
    <content type="html">&lt;p&gt;Hello, thanks for visiting my personal website.&lt;/p&gt;
 
 &lt;p&gt;I am a Software Engineering Manager at &lt;a href=&quot;https://www.intuitive.com&quot;&gt;Intuitive Surgical, Inc.&lt;/a&gt; (Sunnyvale, CA, USA) that develops and manufactures the &lt;a href=&quot;https://www.intuitive.com/en/products-and-services/da-vinci&quot;&gt;da Vinci® Surgical System&lt;/a&gt; to enable surgeons to perform delicate and complex operations through a few small incisions (minimally invasive surgery).&lt;/p&gt;
@@ -451,9 +451,9 @@ Committee: &lt;a href=&quot;http://www.cs.jhu.edu/~rht&quot;&gt;Dr. Russell H. T
  
  <entry>
    <title>Welcome</title>
-   <link href="http://127.0.0.1:4000/2019/01/24/welcome/"/>
+   <link href="/2019/01/24/welcome/"/>
    <updated>2019-01-24T06:22:30-08:00</updated>
-   <id>http://127.0.0.1:4000/2019/01/24/welcome</id>
+   <id>/2019/01/24/welcome</id>
    <content type="html">&lt;p&gt;Hi, I’m Min Yang Jung.&lt;/p&gt;
 
 &lt;p&gt;I love designing and building software infrastructure for safety-critical real-time robot control systems, primarily in the area of medical and surgical robotics. I strive for systematic methods and software architectures that can facilitate the design, implementation, and verification and validation testing of robot control systems with emphasis on safety. I have multiple years of hands-on experience with the development of software systems both in academia and in industry.&lt;/p&gt;
@@ -467,9 +467,9 @@ Committee: &lt;a href=&quot;http://www.cs.jhu.edu/~rht&quot;&gt;Dr. Russell H. T
  
  <entry>
    <title>ROBODOC® System</title>
-   <link href="http://127.0.0.1:4000/2016/12/31/robodoc/"/>
+   <link href="/2016/12/31/robodoc/"/>
    <updated>2016-12-31T06:45:00-08:00</updated>
-   <id>http://127.0.0.1:4000/2016/12/31/robodoc</id>
+   <id>/2016/12/31/robodoc</id>
    <content type="html">&lt;p&gt;When I decided to work on the software system safety as my PhD thesis topic, it didn’t take long before I realized safety in the medical robotics domain had not yet been formulated as a well-defined research problem.  Although virtually all papers in the medical robotics domain mention (the importance of) safety, it has been mostly considered in the application- or system-specific context, rather than as a system property that requires systematic approaches.&lt;/p&gt;
 
 &lt;p&gt;So I spent quite a bit of time – almost a year – for literature review in various areas such as software engineering, component-based software engineering, system safety engineering, safety- and mission-critical application domains, dependable computing domain, and so on. Two major findings (I’ll write another post that overviews those related domains later):&lt;/p&gt;

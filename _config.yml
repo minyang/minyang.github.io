@@ -2,8 +2,8 @@
 title:               'Min Yang Jung'
 tagline:             "Software, Safety, Medical Robotics"
 description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://127.0.0.1:4000
-baseurl:             ''
+#url:                 http://127.0.0.1:4000
+#baseurl:             ''
 paginate:            5
 permalink:           pretty
 
