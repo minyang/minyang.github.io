@@ -9,33 +9,33 @@
 
   <title>
     
-      About &middot; Lanyon
+      About &middot; Min Yang Jung
     
   </title>
 
   
-  <link rel="canonical" href="http://lanyon.getpoole.com/about/">
+  <link rel="canonical" href="http://127.0.0.1:4000/about/">
   
 
-  <link rel="stylesheet" href="http://lanyon.getpoole.com/public/css/poole.css">
-  <link rel="stylesheet" href="http://lanyon.getpoole.com/public/css/syntax.css">
-  <link rel="stylesheet" href="http://lanyon.getpoole.com/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://127.0.0.1:4000/public/css/poole.css">
+  <link rel="stylesheet" href="http://127.0.0.1:4000/public/css/syntax.css">
+  <link rel="stylesheet" href="http://127.0.0.1:4000/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://lanyon.getpoole.com/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="http://lanyon.getpoole.com/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://127.0.0.1:4000/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://127.0.0.1:4000/public/favicon.ico">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://lanyon.getpoole.com/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="http://127.0.0.1:4000/atom.xml">
 
   
 </head>
 
 
-  <body>
+  <body class="sidebar-overlay">
 
     <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
      styles, `#sidebar-checkbox` for behavior. -->
-<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
@@ -44,7 +44,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="http://lanyon.getpoole.com/">Home</a>
+    <a class="sidebar-nav-item" href="http://127.0.0.1:4000/">Home</a>
 
     
 
@@ -60,16 +60,36 @@
     
       
         
-          <a class="sidebar-nav-item active" href="http://lanyon.getpoole.com/about/">About</a>
+          <a class="sidebar-nav-item active" href="http://127.0.0.1:4000/about/">About</a>
         
       
     
       
     
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://127.0.0.1:4000/career/">Career</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="http://127.0.0.1:4000/publications/">Publications</a>
+        
+      
+    
 
-    <a class="sidebar-nav-item" href="/archive/v1.1.0.zip">Download</a>
-    <a class="sidebar-nav-item" href="">GitHub project</a>
-    <span class="sidebar-nav-item">Currently v1.1.0</span>
+    <!--<a class="sidebar-nav-item" href="/archive/v0.0.1.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>-->
+    <span class="sidebar-nav-item">Currently v0.0.1</span>
   </nav>
 
   <div class="sidebar-item">
@@ -86,8 +106,8 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">Lanyon</a>
-            <small>A Jekyll theme</small>
+            <a href="/" title="Home">Min Yang Jung</a>
+            <small>Software, Safety, Medical Robotics</small>
           </h3>
         </div>
       </div>
@@ -95,34 +115,70 @@
       <div class="container content">
         <div class="page">
   <h1 class="page-title">About</h1>
-  <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+  <p><img src="/assets/about.jpg" alt="about" />
+Hello, thanks for visiting my personal website.</p>
 
-<p>In the novel, <em>The Strange Case of Dr. Jeykll and Mr. Hyde</em>, Mr. Poole is Dr. Jekyll’s virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It’s made by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+<p>I am a Software Engineering Manager at Intuitive Surgical, Inc. (Sunnyvale, CA, USA) that develops and manufactures the da Vinci® Surgical System to enable surgeons to perform delicate and complex operations through a few small incisions (minimally invasive surgery).</p>
 
-<p>There are currently two themes built on Poole:</p>
+<p>I really enjoy designing and building robot software systems. I am always fascinated by carefully structured and implemented software systems that are capable of gracefully dealing with errors and unexpected events, because such resiliency and robustness cannot be achieved by substantial design effort and development experience. While working in the online game industry for a few years, I started to develop my fascination for quality systems. My PhD in computer science (medical robotics) was a great opportunity for me to further deepen my understanding of the system design and to have hands-on experience with designing and building real-time robot control software systems.</p>
+
+<h2 id="my-phd-research">My PhD Research</h2>
+
+<p>During my Ph.D. at Johns Hopkins University, I was very fortunate to work with those who pioneered medical robotics since the early days (late 80’s and early 90’s). My Ph.D. advisor is Dr. Peter Kazanzides, who co-founded the Integrated Surgical Systems in 1990 to commercialize the ROBODOC® System for orthopedic surgery. I also had valuable opportunities to work with Dr. Russell Taylor, one of the very early pinoneers of medical robotics.</p>
+
+<p>My Ph.D. research was focused on software system safety for component-based medical and surgical robot systems. The goal was to develop structured and systematic methods to manage safety of component-based surgical robot systems at the middleware or framework level, so that medical and surgical robot systems can be systematically and consistently designed, implemented, tested, and validated. My dissertation takes an architectural approach to safety of robot systems. Its final result was formulated as a software architecture, called the Safety Architecture for Engineering Computer-Assisted Surgical Systems (SAFECASS). I built it as an open source C++ library, which I work on as my weekend project.</p>
+
+<p>In parallel with my research on robot system safety, I also worked on a collaborative research project with THINK Surgical to develop the research ROBODOC System. We built the entire software stack of the system and used it to investigate and develop new methods for kinematic calibration of the robot system, which later became the core module of the TCAT System. Throughout this project, I closely worked with my advisor and Dr. Simon Leonard on the project and had valuable chances to learn from their experience with designing, building, and debugging real-time robot control systems.</p>
+
+<p>I have actively participated in the development of the cisst libraries and Surgical Assistant Workstation (SAW), an open source cross-platform component-based software packages designed to ease the development of computer-assisted intervention systems. The cisst/SAW has been used for medical robotics research in various application areas, such as neurosurgery and retinal microsurgery. One substantial use case of the cisst/SAW is the da Vinci Research Kit (DVRK) project. My contribution was primarily on the cisstMultiTask library that provides the component-based framework for the cisst/SAW-based systems. I have also contributed to other cisst libraries, such as cisstOSAbstration (OS abstraction library), cisstStereoVision (stereo vision processing library), and cisstRobot (computational tools and algorithms for robotics).</p>
+
+<h2 id="outside-of-work">Outside of Work</h2>
+
+<p>Outside the work, I am an avid skier and enjoy tennis and biking. I have a KSIA Level 2 ski instructor’s license (comparable to CSIA Level 2~3) and my National Tennis Rating Program (NTRP) level (used by the USTA) is around 3.5~4.0.</p>
 
 <ul>
-  <li><a href="http://hyde.getpoole.com">Hyde</a></li>
-  <li><a href="http://lanyon.getpoole.com">Lanyon</a></li>
+  
+    <li>
+      <a href="/2020/04/03/introducing-lanyon/">Introducing Lanyon</a>
+    </li>
+  
+    <li>
+      <a href="/2020/04/02/example-content/">Example content</a>
+    </li>
+  
+    <li>
+      <a href="/2020/04/01/whats-jekyll/">What's Jekyll?</a>
+    </li>
+  
+    <li>
+      <a href="/2020/01/19/untitled/">Contact</a>
+    </li>
+  
+    <li>
+      <a href="/2020/01/18/career/">Career</a>
+    </li>
+  
+    <li>
+      <a href="/2019/03/10/writing-better-embedded-software/">Writing Better Embedded Software</a>
+    </li>
+  
+    <li>
+      <a href="/2019/01/24/publications/">Publications</a>
+    </li>
+  
+    <li>
+      <a href="/2019/01/24/about-me/">About Me</a>
+    </li>
+  
+    <li>
+      <a href="/2019/01/24/welcome/">Welcome</a>
+    </li>
+  
+    <li>
+      <a href="/2016/12/31/robodoc/">ROBODOC® System</a>
+    </li>
+  
 </ul>
-
-<p>Learn more and contribute on <a href="https://github.com/poole">GitHub</a>.</p>
-
-<h2 id="setup">Setup</h2>
-
-<p>Some fun facts about the setup of this project include:</p>
-
-<ul>
-  <li>Built for <a href="https://jekyllrb.com">Jekyll</a></li>
-  <li>Developed on GitHub and hosted for free on <a href="https://pages.github.com">GitHub Pages</a></li>
-  <li>Coded with <a href="https://atom.io">Atom</a></li>
-</ul>
-
-<p>Have questions or suggestions? Feel free to <a href="https://github.com/poole/issues/new">open an issue on GitHub</a> or <a href="https://twitter.com/mdo">ask me on Twitter</a>.</p>
-
-<p>Thanks for reading!</p>
 
 </div>
 

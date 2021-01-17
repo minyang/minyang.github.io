@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Lanyon</title>
- <link href="http://lanyon.getpoole.com/atom.xml" rel="self"/>
- <link href="http://lanyon.getpoole.com/"/>
- <updated>2021-01-16T14:21:25-08:00</updated>
- <id>http://lanyon.getpoole.com</id>
+ <title>Min Yang Jung</title>
+ <link href="http://127.0.0.1:4000/atom.xml" rel="self"/>
+ <link href="http://127.0.0.1:4000/"/>
+ <updated>2021-01-17T00:54:11-08:00</updated>
+ <id>http://127.0.0.1:4000</id>
  <author>
-   <name>Mark Otto</name>
-   <email>markdotto@gmail.com</email>
+   <name>Min Yang Jung</name>
+   <email>contact@minyangjung.com</email>
  </author>
 
  
  <entry>
    <title>Introducing Lanyon</title>
-   <link href="http://lanyon.getpoole.com/2020/04/03/introducing-lanyon/"/>
+   <link href="http://127.0.0.1:4000/2020/04/03/introducing-lanyon/"/>
    <updated>2020-04-03T00:00:00-07:00</updated>
-   <id>http://lanyon.getpoole.com/2020/04/03/introducing-lanyon</id>
+   <id>http://127.0.0.1:4000/2020/04/03/introducing-lanyon</id>
    <content type="html">&lt;p&gt;Lanyon is an unassuming &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; theme that places content first by tucking away navigation in a hidden drawer. It’s based on &lt;a href=&quot;http://getpoole.com&quot;&gt;Poole&lt;/a&gt;, the Jekyll butler.&lt;/p&gt;
 
 &lt;h3 id=&quot;built-on-poole&quot;&gt;Built on Poole&lt;/h3&gt;
@@ -59,9 +59,9 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://lanyon.getpoole.com/2020/04/02/example-content/"/>
+   <link href="http://127.0.0.1:4000/2020/04/02/example-content/"/>
    <updated>2020-04-02T00:00:00-07:00</updated>
-   <id>http://lanyon.getpoole.com/2020/04/02/example-content</id>
+   <id>http://127.0.0.1:4000/2020/04/02/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -192,9 +192,9 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://lanyon.getpoole.com/2020/04/01/whats-jekyll/"/>
+   <link href="http://127.0.0.1:4000/2020/04/01/whats-jekyll/"/>
    <updated>2020-04-01T00:00:00-07:00</updated>
-   <id>http://lanyon.getpoole.com/2020/04/01/whats-jekyll</id>
+   <id>http://127.0.0.1:4000/2020/04/01/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/mojombo/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -204,6 +204,356 @@
 &lt;p&gt;It’s an immensely useful tool and one we encourage you to use here with Lanyon.&lt;/p&gt;
 
 &lt;p&gt;Find out more by &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Contact</title>
+   <link href="http://127.0.0.1:4000/2020/01/19/untitled/"/>
+   <updated>2020-01-19T00:38:31-08:00</updated>
+   <id>http://127.0.0.1:4000/2020/01/19/untitled</id>
+   <content type="html">&lt;p&gt;I am reachable via &lt;a href=&quot;mailto:contact@minyangjung.com&quot;&gt;contact@minyangjung.com&lt;/a&gt; or LinkedIn.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Career</title>
+   <link href="http://127.0.0.1:4000/2020/01/18/career/"/>
+   <updated>2020-01-18T23:25:28-08:00</updated>
+   <id>http://127.0.0.1:4000/2020/01/18/career</id>
+   <content type="html">&lt;p&gt;My work experience and educational background can be found on &lt;a href=&quot;https://www.linkedin.com/in/min-yang-jung-763b5839/&quot;&gt;LinkedIn&lt;/a&gt;.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Writing Better Embedded Software</title>
+   <link href="http://127.0.0.1:4000/2019/03/10/writing-better-embedded-software/"/>
+   <updated>2019-03-10T20:04:54-07:00</updated>
+   <id>http://127.0.0.1:4000/2019/03/10/writing-better-embedded-software</id>
+   <content type="html">&lt;p&gt;I came across a video recording of a &lt;a href=&quot;https://isocpp.org/blog/2019/03/writing-better-embedded-software-dan-saks-keynote-meeting-embedded-2018&quot;&gt;key note talk by Dan Saks&lt;/a&gt; from Meeting Embedded 2018.  Dan Saks, who served as secretary of the ANSI and ISO C++ standards committee, talks about embedded software development around C and C++.  Some of the topics he addresses include the definition of embedded systems, the barriers (in mindset) for embedded/C developers to transition from C to C++, and his approaches to introducing C++ to embedded/C developers based on his experience.&lt;/p&gt;
+
+&lt;p&gt;This talk was interesting to me because he delineated the characteristics of embedded systems, design considerations that embedded software developers typically consider (e.g., power budget, thermal effects), and how/what embedded software developers think.&lt;/p&gt;
+
+&lt;p&gt;One note from his talk:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Embedded System&lt;/em&gt; is a combination of computer hardware and software, and perhaps additional mechanical or other parts, designed to perform a dedicated function. (from Embedded Systems Dictionary by jack Ganssle and Michael Barr, 2003, CMP books)&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Publications</title>
+   <link href="http://127.0.0.1:4000/2019/01/24/publications/"/>
+   <updated>2019-01-24T07:26:12-08:00</updated>
+   <id>http://127.0.0.1:4000/2019/01/24/publications</id>
+   <content type="html">&lt;h2 id=&quot;journalsconferences&quot;&gt;Journals/Conferences&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, and P. Kazanzides, “ &lt;strong&gt;An Architectural Approach to Safety of Component-based Robotic Systems&lt;/strong&gt; ,” In &lt;em&gt;IEEE Intl. Conf. on Robotics and Automation (ICRA)&lt;/em&gt;, Stockholm, Sweden, May 2016&lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/ICRA.2016.7487511&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/icra16-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, M. Balicki, A. Deguet, R. H. Taylor, and P. Kazanzides, “ &lt;strong&gt;Lessons Learned from the Development of Component-Based Medical Robot Systems&lt;/strong&gt; ,” &lt;em&gt;Journal of Software Engineering for Robotics&lt;/em&gt;, 5(2):25-41, Sep. 2014  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://joser.unibg.it/index.php?journal=joser&amp;amp;page=issue&amp;amp;op=view&amp;amp;path%5B%5D=6&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/joser14-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, Russell H. Taylor, and P. Kazanzides, “ &lt;strong&gt;Safety Design View: A Conceptual Framework for Systematic Understanding of Safety Features of Medical Robot Systems&lt;/strong&gt; ,” &lt;em&gt;IEEE Intl. Conf. on Robotics and Automation (ICRA)&lt;/em&gt;, Hong Kong, May 2014  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/ICRA.2014.6907107&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/icra14-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt; and P. Kazanzides, “ &lt;strong&gt;Run-time Safety Framework for Component-based Medical Robots&lt;/strong&gt; ,” &lt;em&gt;Medical Cyber Physical Systems Workshop&lt;/em&gt; (formerly known as HCMDSS (High Confidence Medical Devices, Software, and Systems)), CPSWeek 2013, Philadelphia, PA, USA, 2013  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://mlab-upenn.github.io/medcps_workshop/2013&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/mcps13-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt; and P. Kazanzides, “ &lt;strong&gt;Fault Detection and Diagnosis for Component-based Robotic Systems&lt;/strong&gt; ,” In &lt;em&gt;IEEE Intl. Conf. on Technologies for Practical Robot Applications (TePRA)&lt;/em&gt;, Boston, MA, USA, 2012  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/TePRA.2012.6269387&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/tepra12-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;P. Kazanzides, &lt;u&gt;M. Y. Jung&lt;/u&gt;, A. Deguet, B. Vagvolgyi, M. Balicki, and R. H. Taylor, “ &lt;strong&gt;Component-based software for dynamic configuration and control of computer assisted intervention systems&lt;/strong&gt; ,” in &lt;em&gt;MICCAI Workshop on Systems and Architecture for Computer Assisted Interventions&lt;/em&gt;, Midas Journal, August 2011  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://www.midasjournal.org/browse/publication/813&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/miccai11-wksp-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;M. Balicki, T. Xia, &lt;u&gt;M. Y. Jung&lt;/u&gt;, A. Deguet, B. Vagvolgyi, P. Kazanzides, and R. H. Taylor, “ &lt;strong&gt;Prototyping a Hybrid Cooperative and Tele-robotic Surgical System for Retinal Microsurgery&lt;/strong&gt; ,” in &lt;em&gt;MICCAI Workshop on Systems and Architecture for Computer Assisted Interventions&lt;/em&gt;, Midas Journal, August 2011  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://www.midasjournal.org/browse/publication/815&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/miccai11-wksp-eyesaw-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, “ &lt;strong&gt;A Layered Approach for Identifying Systematic Faults of Component-based Software Systems&lt;/strong&gt; ,” In &lt;em&gt;Proc. of the 16th Intl. Workshop on Component-Oriented Programming (WCOP)&lt;/em&gt;, Boulder, Colorado, USA, 2011  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dl.acm.org/citation.cfm?id=2000296&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/wcop11-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, A. Deguet, and P. Kazanzides, “ &lt;strong&gt;A Component-based Architecture for Flexible Integration of Robotic Systems&lt;/strong&gt; ,” In &lt;em&gt;IEEE/RSJ Intl. Conf. on Intelligent Robots and Systems (IROS)&lt;/em&gt;, Taipei, Taiwan, 2010  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/IROS.2010.5652394&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/iros10-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, T. Xia, A. Deguet, R. Kumar, R. H. Taylor, and P. Kazanzides, “&lt;strong&gt;A Surgical Assistant Workstation (SAW) Application for a Teleoperated Surgical Robot System&lt;/strong&gt;,” In &lt;em&gt;MICCAI Workshop on Systems and Architecture for Computer Assisted Interventions&lt;/em&gt;, Midas Journal, August 2009  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://www.midasjournal.org/browse/publication/653&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/miccai09-wksp-MJ.pdf&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;G. Cheon, I. H. Shin, &lt;u&gt;M. Y. Jung&lt;/u&gt;, and H. C. Kim, “&lt;strong&gt;Implementation of a Real-time Multi-Channel Gateway Server in Ubiquitous Integrated Biotelemetry System for Emergency Care (UIBSEC)&lt;/strong&gt;,” In &lt;em&gt;IEEE Engineering in Medicine and Biology Society (EMBS)&lt;/em&gt;, pp. 5207-5210, 2009  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/IEMBS.2009.5334075&quot;&gt;➜&lt;/a&gt; ⇲&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt;, J. Kang, I. H. Shin, Y. Koo, G. J. Suh, and H. C. Kim, “&lt;strong&gt;Implementation of the Relay Server for the Ubiquitous Integrated Biotelemetry System for Emergency Care (UIBSEC) based on 3.5G HSDPA Technology&lt;/strong&gt;,” In &lt;em&gt;IEEE Engineering in Medicine and Biology Society (EMBS)&lt;/em&gt;, pp. 6713-6716, 2007  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/IEMBS.2007.4353901&quot;&gt;➜&lt;/a&gt; ⇲&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Y. Koo, J. Kang, I. H. Shin, &lt;u&gt;M. Y. Jung&lt;/u&gt;, G. J. Suh, and H. C. Kim, “ &lt;strong&gt;Preliminary Study of Motion Artifact Rejection for NIBP measurement in an Ambulance&lt;/strong&gt; ,” In &lt;em&gt;IEEE Engineering in Medicine and Biology Society (EMBS)&lt;/em&gt;, pp. 705-708, 2007  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/IEMBS.2007.4352388&quot;&gt;➜&lt;/a&gt; ⇲&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;J. Kang, I. H. Shin, Y. Koo, &lt;u&gt;M. Y. Jung&lt;/u&gt;, G. J. Suh, and H. C. Kim, “&lt;strong&gt;HSDPA (3.5G)-Based Ubiquitous Integrated Biotelemetry System for Emergency Care&lt;/strong&gt;,” In &lt;em&gt;IEEE Engineering in Medicine and Biology Society (EMBS)&lt;/em&gt;, pp. 3665-3668, 2007  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://dx.doi.org/10.1109/IEMBS.2007.4353126&quot;&gt;➜&lt;/a&gt; ⇲&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;thesis&quot;&gt;Thesis&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;M. Y. Jung, “ &lt;strong&gt;State-based Safety of Component-based Medical and Surgical Robot Systems&lt;/strong&gt; ,” Ph.D. thesis, The Johns Hopkins University, Baltimore, Maryland, USA, May. 2015  &lt;/td&gt;
+          &lt;td&gt;&lt;a href=&quot;http://jhir.library.jhu.edu/handle/1774.2/39512&quot;&gt;➜&lt;/a&gt; &lt;a href=&quot;https://drive.google.com/open?id=0BwGcEiVvK4n9RUJmSXhUYW90SG8&quot;&gt;⇲&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Advisor: &lt;a href=&quot;http://smarts.lcsr.jhu.edu/people/peter-kazanzides/&quot;&gt;Dr. Peter Kazanzides&lt;/a&gt;&lt;br /&gt;
+Committee: &lt;a href=&quot;http://www.cs.jhu.edu/~rht&quot;&gt;Dr. Russell H. Taylor&lt;/a&gt;, &lt;a href=&quot;http://www.cs.jhu.edu/~scott/&quot;&gt;Dr. Scott Smith&lt;/a&gt;, and &lt;a href=&quot;http://smarts.lcsr.jhu.edu/people/peter-kazanzides/&quot;&gt;Dr. Peter Kazanzides&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;M. Y. Jung, “ &lt;strong&gt;A Study on the Platform for Ubiquitous Health Services using Mobile Wireless Communication&lt;/strong&gt; ,” M.S. thesis, Seoul National University, Seoul, Korea, 2008.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;technical-reports&quot;&gt;Technical Reports&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt; and Peter Kazanzides, “&lt;strong&gt;Calibration of Kinematic Parameters of the ROBODOC(R) System,&lt;/strong&gt;” Internal technical document for THINK Surgical Inc., Oct. 2014&lt;/li&gt;
+  &lt;li&gt;&lt;u&gt;M. Y. Jung&lt;/u&gt; and Peter Kazanzides, “&lt;strong&gt;Calibration of Tool Parameters in the ROBODOC(R) System&lt;/strong&gt;,” Internal technical document for THINK Surgical Inc., Oct. 2014&lt;/li&gt;
+  &lt;li&gt;M. Y. Jung, “ &lt;strong&gt;Teleoperation of WAM and SAH Robots – Integration of Motion Planner with Robot Controller&lt;/strong&gt; ,” Ph.D. second qualifying project report (advisor: Gregory D. Hager, Simon Leonard, Erion Plaku), Johns Hopkins University, September 2011.&lt;/li&gt;
+  &lt;li&gt;M. Y. Jung, “ &lt;strong&gt;A Component-based Architecture for Flexible Integration of Robotic Systems&lt;/strong&gt; ,” Ph.D. first qualifying project report (advisor: Peter Kazanzides), Johns Hopkins University, July 2010.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>About Me</title>
+   <link href="http://127.0.0.1:4000/2019/01/24/about-me/"/>
+   <updated>2019-01-24T06:48:40-08:00</updated>
+   <id>http://127.0.0.1:4000/2019/01/24/about-me</id>
+   <content type="html">&lt;p&gt;Hello, thanks for visiting my personal website.&lt;/p&gt;
+
+&lt;p&gt;I am a Software Engineering Manager at &lt;a href=&quot;https://www.intuitive.com&quot;&gt;Intuitive Surgical, Inc.&lt;/a&gt; (Sunnyvale, CA, USA) that develops and manufactures the &lt;a href=&quot;https://www.intuitive.com/en/products-and-services/da-vinci&quot;&gt;da Vinci® Surgical System&lt;/a&gt; to enable surgeons to perform delicate and complex operations through a few small incisions (minimally invasive surgery).&lt;/p&gt;
+
+&lt;p&gt;I really enjoy designing and building robot software systems. I am always fascinated by carefully structured and implemented software systems that are capable of gracefully dealing with errors and unexpected events, because such resiliency and robustness cannot be achieved by substantial design effort and development experience. While working in the online game industry for a few years, I started to develop my fascination for quality systems. My PhD in computer science (medical robotics) was a great opportunity for me to further deepen my understanding of the system design and to have hands-on experience with designing and building real-time robot control software systems.&lt;/p&gt;
+
+&lt;p&gt;During my Ph.D. at Johns Hopkins University, I was very fortunate to work with those who pioneered medical robotics since the early days (late 80’s and early 90’s). My Ph.D. advisor is &lt;a href=&quot;https://www.cs.jhu.edu/faculty/peter-kazanzides/&quot;&gt;Dr. Peter Kazanzides&lt;/a&gt;, who co-founded the Integrated Surgical Systems in 1990 to commercialize the ROBODOC® System for orthopedic surgery. I also had valuable opportunities to work with &lt;a href=&quot;http://www.cs.jhu.edu/~rht/&quot;&gt;Dr. Russell Taylor&lt;/a&gt;, one of the very early pinoneers of medical robotics.&lt;/p&gt;
+
+&lt;p&gt;My Ph.D. research was focused on software system safety for component-based medical and surgical robot systems. The goal was to develop structured and systematic methods to manage safety of component-based surgical robot systems at the middleware or framework level, so that medical and surgical robot systems can be systematically and consistently designed, implemented, tested, and validated. My dissertation takes an architectural approach to safety of robot systems. Its final result was formulated as a software architecture, called the &lt;a href=&quot;https://github.com/safecass/safecass/wiki&quot;&gt;Safety Architecture for Engineering Computer-Assisted Surgical Systems (SAFECASS)&lt;/a&gt;. I built it as &lt;a href=&quot;https://github.com/safecass/safecass&quot;&gt;an open source C++ library&lt;/a&gt;, which I work on as my weekend project.&lt;/p&gt;
+
+&lt;p&gt;In parallel with my research on robot system safety, I also worked on a collaborative research project with THINK Surgical to develop the research ROBODOC System. We built the entire software stack of the system and used it to investigate and develop new methods for kinematic calibration of the robot system, which later became the core module of the TCAT System. Throughout this project, I closely worked with my advisor and &lt;a href=&quot;http://www.cs.jhu.edu/~sleonard/&quot;&gt;Dr. Simon Leonard&lt;/a&gt; on the project and had valuable chances to learn from their experience with designing, building, and debugging real-time robot control systems.&lt;/p&gt;
+
+&lt;p&gt;I have actively participated in the development of the &lt;a href=&quot;https://github.com/jhu-cisst/cisst/wiki&quot;&gt;cisst libraries and Surgical Assistant Workstation (SAW)&lt;/a&gt;, an open source cross-platform component-based software packages designed to ease the development of computer-assisted intervention systems. The &lt;a href=&quot;https://github.com/minyang/public/blob/master/papers/joser14-MJ.pdf&quot;&gt;cisst/SAW has been used for medical robotics research&lt;/a&gt; in various application areas, such as neurosurgery and retinal microsurgery. One substantial use case of the cisst/SAW is the &lt;a href=&quot;https://github.com/jhu-dvrk/sawIntuitiveResearchKit/wiki&quot;&gt;da Vinci Research Kit (DVRK) project&lt;/a&gt;. My contribution was primarily on the &lt;em&gt;&lt;a href=&quot;https://github.com/jhu-cisst/cisst/wiki/cisstMultiTask-concepts&quot;&gt;cisstMultiTask&lt;/a&gt;&lt;/em&gt; library that provides the component-based framework for the cisst/SAW-based systems. I have also contributed to other cisst libraries, such as &lt;em&gt;cisstOSAbstration&lt;/em&gt; (OS abstraction library), &lt;em&gt;cisstStereoVision&lt;/em&gt; (stereo vision processing library), and &lt;em&gt;cisstRobot&lt;/em&gt; (computational tools and algorithms for robotics).&lt;/p&gt;
+
+&lt;h2 id=&quot;outside-of-work&quot;&gt;Outside of Work&lt;/h2&gt;
+
+&lt;p&gt;Outside the work, I am an avid skier and enjoy tennis and biking. I have a KSIA Level 2 ski instructor’s license (comparable to CSIA Level 2~3) and my National Tennis Rating Program (NTRP) level (used by the USTA) is around 3.5~4.0.&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome</title>
+   <link href="http://127.0.0.1:4000/2019/01/24/welcome/"/>
+   <updated>2019-01-24T06:22:30-08:00</updated>
+   <id>http://127.0.0.1:4000/2019/01/24/welcome</id>
+   <content type="html">&lt;p&gt;Hi, I’m Min Yang Jung.&lt;/p&gt;
+
+&lt;p&gt;I love designing and building software infrastructure for safety-critical real-time robot control systems, primarily in the area of medical and surgical robotics. I strive for systematic methods and software architectures that can facilitate the design, implementation, and verification and validation testing of robot control systems with emphasis on safety. I have multiple years of hands-on experience with the development of software systems both in academia and in industry.&lt;/p&gt;
+
+&lt;p&gt;More about me and my prior work are available on the left, and I can be reached via &lt;a href=&quot;https://minyangjung.com/#/contact&quot;&gt;Contact&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for your visit!&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>ROBODOC® System</title>
+   <link href="http://127.0.0.1:4000/2016/12/31/robodoc/"/>
+   <updated>2016-12-31T06:45:00-08:00</updated>
+   <id>http://127.0.0.1:4000/2016/12/31/robodoc</id>
+   <content type="html">&lt;p&gt;When I decided to work on the software system safety as my PhD thesis topic, it didn’t take long before I realized safety in the medical robotics domain had not yet been formulated as a well-defined research problem.  Although virtually all papers in the medical robotics domain mention (the importance of) safety, it has been mostly considered in the application- or system-specific context, rather than as a system property that requires systematic approaches.&lt;/p&gt;
+
+&lt;p&gt;So I spent quite a bit of time – almost a year – for literature review in various areas such as software engineering, component-based software engineering, system safety engineering, safety- and mission-critical application domains, dependable computing domain, and so on. Two major findings (I’ll write another post that overviews those related domains later):&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;em&gt;Within&lt;/em&gt; medical robotics, there is a lack of prior work that specifically focus on the safety of medical robots.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Outside&lt;/em&gt; medical robotics, Safety has been already recognized as one of crucial system properties and as such there is a substantial body of work around it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;This was a good news to me in that I had room for contributions, but at the same time was not a good news because there were not much of prior work that I could refer to for my research.&lt;/p&gt;
+
+&lt;p&gt;Fortunately, there was one medical robot system, of which many aspects are &lt;em&gt;relatively&lt;/em&gt; well documented and published in the academic medical robotics literature: The &lt;strong&gt;ROBODOC® system&lt;/strong&gt; system, an orthopedic surgical robot system. Starting from its history, the topics they cover include user-driven system design requirements, an overall system architecture, design rationale, safety design principles, and some of engineering details. Even though most of these papers were published in the 90’s, I personally learned a lot from those articles, which later became my primary resource for my own research on safety, including my PhD dissertation. So I thought a list of those papers with the history of the ROBODOC system may be useful for those who are curious about ROBODOC, who are interested in safety in general, or who are (about to) working on safety as a research topic. The list of the literature that I reviewed includes Taylor &lt;em&gt;et al.&lt;/em&gt; (1990, 1991, 1994, 1996), Kazanzides &lt;em&gt;et al.&lt;/em&gt; (1992, 1993, 1995, 1996, 1999), Mittelstadt &lt;em&gt;et al.&lt;/em&gt; (1993, 1996), and Cain &lt;em&gt;et al.&lt;/em&gt; (1993). For a complete list, please refer to &lt;a href=&quot;http://minyangjung.com/robodoc-system/#robodoc-ref&quot;&gt;REFERENCES&lt;/a&gt; at the bottom of this article.&lt;/p&gt;
+
+&lt;p&gt;&lt;u&gt;&lt;strong&gt;&lt;strong&gt;DISCLAIMER&lt;/strong&gt;&lt;/strong&gt;&lt;/u&gt;: This article is an excerpt of &lt;a href=&quot;https://drive.google.com/file/d/0BwGcEiVvK4n9RUJmSXhUYW90SG8/view&quot;&gt;my PhD dissertation&lt;/a&gt; (Section 6.2.1), which was proofread by &lt;a href=&quot;http://smarts.lcsr.jhu.edu/people/peter-kazanzides/&quot;&gt;Dr. Peter Kazanzides&lt;/a&gt; and &lt;a href=&quot;http://www.cs.jhu.edu/~rht&quot;&gt;Dr. Russell H. Taylor&lt;/a&gt;. Dr. Kazanzides is a co-founder of the Integrated Surgical System (ISS), a manufacturer of the ROBODOC system, and was the Director of Engineering of ISS. Dr. Taylor designed and prototyped an earlier version of the ROBODOC system for a veterinary orthopedic surgery at the IBM Research in the late 80’s.&lt;/p&gt;
+
+&lt;h2 id=&quot;overview-of-the-robodoc-system&quot;&gt;Overview of the ROBODOC System&lt;/h2&gt;
+
+&lt;p&gt;The ROBODOC® system has been developed to increase the accuracy and efficacy of surgical procedures such as cementless Total Hip Replacement (THR) surgery and Total Knee Replacement (TKR) surgery by enabling surgeons to precisely specify the desired prosthesis placement in a preoperative CT scan of the patient and then use the robotic system to accurately machine the bone to achieve that plan.&lt;/p&gt;
+
+&lt;p&gt;It began as a joint project between the University of California, Davis and IBM Research. The canine system (alpha prototype) was developed for canine THR in a well-controlled, supervised research environment, i.e., under the active supervision of the developing engineers. It was first clinically used in 1990 for canine patients at a veterinary hospital in Sacramento, California and performed canine surgeries. This alpha prototype went through fundamental changes and improvements to evolve into a beta (investigational) medical device that was operated by surgical teams –- without engineers –- for human clinical trials at multiple clinical sites. The beta version of ROBODOC was the subject of an FDA-authorized, multi-center clinical trial in the United States, and performed over 200 surgeries at a hospital in Frankfurt, Germany. It was then further developed as a commercial-level product to be used in Europe and this required an architectural change from a centralized architecture to a distributed architecture.&lt;/p&gt;
+
+&lt;p&gt;The following figure shows the ROBODOC System. The two main components of the ROBODOC System are the ORTHODOC™ Preoperative Planning System (ORTHODOC) and the ROBODOC Surgical Assistant (ROBODOC). ORTHODOC allows the surgeon to develop a preoperative plan that ROBODOC can execute. The two inputs to ORTHODOC are a Computed Tomography (CT) scan of the patient’s femur and a set of implant models based on data from the implant manufacturers. Using implant models and a three-dimensional model of the femur constructed from the CT data, the surgeon visually determines an appropriate implant model with its precise location. Once the plan is finalized, the preoperative plan is recorded and transferred to ROBODOC via a transfer medium (tape or CD).&lt;/p&gt;
+
+&lt;figure class=&quot;kg-card kg-image-card&quot;&gt;&lt;img src=&quot;/content/images/2019/03/image.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;ORTHODOC: Preoperative Planning&lt;/figcaption&gt;&lt;/figure&gt;
+&lt;figure class=&quot;kg-card kg-image-card&quot;&gt;&lt;img src=&quot;/content/images/2019/03/image-1.png&quot; class=&quot;kg-image&quot; /&gt;&lt;figcaption&gt;ROBODOC: Surgical Robot&lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;ROBODOC reads the preoperative plan from the transfer medium and machines a cavity for the implant in the femur according to the plan. To precisely execute the plan, it is required to register the patient’s femur in the preoperative plan with the intraoperative physical reality (i.e., the robot’s workspace coordinates). Calibration of the robot kinematic parameters and the cutting tool’s dimensional parameters also play a vital role in achieving high dimensional accuracy. Based on clinical input, the specification of the robot’s placement accuracy (deviation from the preoperatively planned position) is less than 1.0 mm, and that of the dimensional accuracy (deviation of the machined shape from its ideal dimensions) is less than ±0.4 mm on a cross-section (or ±0.2 mm on each side).&lt;/p&gt;
+
+&lt;h2 id=&quot;safety-features-of-robodoc&quot;&gt;Safety Features of ROBODOC&lt;/h2&gt;
+
+&lt;p&gt;The principal safety requirements of ROBODOC were defined by a surgeon, who was a user of the system, as follows:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;The robot should never “run away”&lt;/em&gt;: No single-mode hardware failure or system error should cause the application software to lose control of the robot motions.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;The robot should never exert excessive force on the patient&lt;/em&gt;: Any cutting force substantially more than needed means something may be wrong and the robot better stop its current motion.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;The robot’s cutter should stay within a pre-specified positional envelope relative to the volume being cut&lt;/em&gt;: A systematic positional shift in the placement or shape of the hole should be prevented.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;The surgeon must be in charge at all times&lt;/em&gt;: The system must provide the surgeon with timely information about its current status and the surgeon must be able to stop motions at any time.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A set of safety features distributed throughout the system were designed to achieve these principle safety requirements. The following presents a &lt;em&gt;partial&lt;/em&gt; list of the safety features of ROBODOC based only on the &lt;em&gt;published, academic&lt;/em&gt; literature.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;System integrity monitoring (with redundant sensors)&lt;/strong&gt;: The real-time control loop periodically monitors system integrity, such as tolerance checking of primary and redundant encoders at each joint, with the capability to turn off the robot arm.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Use of state variables for error handling&lt;/strong&gt; : State variables are defined to represent application-specific procedural flow and are used for error or exception handling.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Dedicated processor for the safety system&lt;/strong&gt; : The safety system runs on a separate processor to isolate it from errors in other subsystems and has a direct hardware interface to power othe system.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Force/torque checks with two thresholds&lt;/strong&gt; : Force and torque feedback from the force sensor are monitored against two thresholds, PAUSE (1.5 kg-f) and STOP (3.0 kg-f). PAUSE halts all robot motion and turns off the cutter, whereas STOP removes power from both the robot and the cutter.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Speed limiter (low speed)&lt;/strong&gt;: The low-level software implements the speed limiter. It operates on the output of the trajectory generation functions and limits the robot’s speed and torque. The rationale of this safety feature is that the surgical staff can stop the robot before any hazard occurs if the robot is slow and weak.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Safety volume (dynamic constraints)&lt;/strong&gt;: During cutting, the software verifies that the cutter tip is within a pre-planned safety volume, with a 3 mm margin for error. The safety volume is derived from the prosthesis geometry, but is independent from the file containing the cutting paths.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Notification of exceptions to application&lt;/strong&gt; : Any reflex action initiated by a safety system leads to an exception to the application which interrupts the normal procedural flow and invokes a handler function for error recovery.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Error detection&lt;/strong&gt; : Data integrity checks (e.g., if there is any corruption of critical data), data rationality checks (e.g., if case-specific data are reasonable), detection of procedural errors (e.g., if surgeons make procedural errors that can compromise both safety and system performance).&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Startup diagnostics&lt;/strong&gt; : During start up, all safety- and performance-related components are verified to make sure that they are functioning within specified tolerances.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;User oversight with emergency pause/stop&lt;/strong&gt; : An external custom pendant with five buttons, including emergency pause and stop, helps surgeons to interact with the system and a graphical display in the operating room provides the current status of the surgical procedure.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;REFERENCES&lt;/h2&gt;
+
+&lt;h3 id=&quot;robodoc-literature&quot;&gt;ROBODOC Literature&lt;/h3&gt;
+
+&lt;p&gt;This is a list of the academic literature on the ROBODOC System that I have reviewed focusing on its system design and safety features. You can download a &lt;a href=&quot;http://wordpress-142906.appspot.com.storage.googleapis.com/robodoc-literature.bib_.zip&quot;&gt;BiBTeX file of these articles&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;R. H. Taylor, P. Kazanzides, B. Mittelstadt, and H. Paul. Redundant consistency checking in a precise surgical robot. In Proc. of the 12th Annual Intl. Conf. of the IEEE, pages 1933–1935, Nov. 1990.&lt;/li&gt;
+  &lt;li&gt;R. H. Taylor, H. Paul, P. Kazanzides, B. Mittelstadt, W. Hanson, J. Zuhars, B. Williamson, B. Musits, E. Glassman, and W. Bargar. Taming the bull: Safety in a precise surgical robot. In Intl. Conf. on Advanced Robotics (ICAR), volume 1, pages 865–870, Jun. 1991.&lt;/li&gt;
+  &lt;li&gt;P. Kazanzides, J. Zuhars, B. Mittelstadt, and R. Taylor. Force sensing and control for a surgical robot. In IEEE Intl. Conf. on Robotics and Automation (ICRA), volume 1, pages 612–617, May 1992.&lt;/li&gt;
+  &lt;li&gt;P. Kazanzides, J. Zuhars, B. Mittelstadt, B. Williamson, P. Cain, F. Smith, L. Rose, and B. Musits. Architecture of a surgical robot. In IEEE Intl. Conf. on Systems, Man and Cybernetics, volume 2, pages 1624–1629, Oct. 1992.&lt;/li&gt;
+  &lt;li&gt;B. Mittelstadt, P. Kazanzides, J. Zuhars, P. Cain, and B. Williamson. Robotic surgery: achieving predictable results in an unpredictable environment. In Intl. Conf. on Advanced Robotics (ICAR), volume 11, pages 367–372, 1993.&lt;/li&gt;
+  &lt;li&gt;P. Cain, P. Kazanzides, J. Zuhars, B. Mittelstadt, and H. Paul. Safety considerations in a surgical robot. In Proc. of 30th Annual Rocky Mountain Bioengineering Symp., volume 29, page 291, Apr. 1993.&lt;/li&gt;
+  &lt;li&gt;P. Kazanzides, B. Mittelstadt, J. Zuhars, P. Cain, and H. Paul. Surgical and industrial robots: Com- parison and case study. In Proc. of the Intl. Robots and Vision Automation Conf., pages 1019–1026, Detroit, MI, Apr. 1993.&lt;/li&gt;
+  &lt;li&gt;R. H. Taylor, B. Mittelstadt, H. Paul, W. Hanson, P. Kazanzides, J. Zuhars, B. Williamson, B. Musits, E. Glassman, and W. Bargar. An image-directed robotic system for precise orthopaedic surgery. IEEE Trans. on Robotics and Automation, 10(3):261–275, Jun. 1994.&lt;/li&gt;
+  &lt;li&gt;P. Kazanzides, B. Mittelstadt, B. Musits, W. Bargar, J. Zuhars, B. Williamson, P. Cain, and E. Carbone. An integrated system for cementless hip replacement. IEEE Engineering in Medicine and Biology Magazine, 14(3):307–313, May/Jun. 1995.&lt;/li&gt;
+  &lt;li&gt;P. Kazanzides, P. W. Cain, and H. A. Wasti. Distributed architecture for a fail-safe robot system. In Proc. of the Signal Processing Applications Conference &amp;amp; Exhibition (DSPx), San Jose, CA, Mar. 1996.&lt;/li&gt;
+  &lt;li&gt;R. H. Taylor, B. D. Mittelstadt, H. A. Paul, W. Hanson, P. Kazanzides, J. F. Zuhars, B. Williamson, B. L. Musits, E. Glassman, and W. L. Bargar. An Image-Directed Robotic System for Precise Orthopaedic Surgery, chapter 28, pages 379–396. Computer-Integrated Surgery. MIT Press, Cambridge, MA, 1996.&lt;/li&gt;
+  &lt;li&gt;B. D. Mittelstadt, P. Kazanzides, J. F. Zuhars, B. Williamson, P. Cain, F. Smith, and W. L. Bargar. The Evolution of a Surgical Robot from Prototype to Human Clinical Use, chapter 29, pages 397–407. Computer-Integrated Surgery. MIT Press, Cambridge, MA, 1996.&lt;/li&gt;
+  &lt;li&gt;P. Kazanzides. Robot Assisted Surgery: The ROBODOC (R) Experience. In Intl. Symp. on Robotics (ISR), volume 30, pages 281–286, Tokyo, Japan, 1999.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;articles-on-robodoc-safety&quot;&gt;Articles on ROBODOC Safety&lt;/h3&gt;
+
+&lt;p&gt;In case you are interested in further information of the ROBODOC safety design, below are a couple additional articles for reference.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;M. Y. Jung. State-based Safety of Component-based Medical and Surgical Robot Systems. PhD thesis, The Johns Hopkins University, Baltimore, Maryland, USA, May. 2015.&lt;/li&gt;
+  &lt;li&gt;M. Y. Jung, R. H. Taylor, and P. Kazanzides. Safety Design View: A conceptual framework for systematic understanding of safety features of medical robot systems. In IEEE Intl. Conf. on Robotics and Automation (ICRA), pages 1883–1888, 2014.&lt;/li&gt;
+&lt;/ol&gt;
 </content>
  </entry>
  

@@ -1,0 +1,8 @@
+---
+layout: post
+title: Contact
+date: '2020-01-19 00:38:31'
+---
+
+I am reachable via [contact@minyangjung.com](mailto:contact@minyangjung.com) or LinkedIn.
+

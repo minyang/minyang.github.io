@@ -1,0 +1,14 @@
+---
+layout: post
+title: Welcome
+date: '2019-01-24 06:22:30'
+---
+
+Hi, I’m Min Yang Jung.
+
+I love designing and building software infrastructure for safety-critical real-time robot control systems, primarily in the area of medical and surgical robotics. I strive for systematic methods and software architectures that can facilitate the design, implementation, and verification and validation testing of robot control systems with emphasis on safety. I have multiple years of hands-on experience with the development of software systems both in academia and in industry.
+
+More about me and my prior work are available on the left, and I can be reached via [Contact](https://minyangjung.com/#/contact).
+
+Thanks for your visit!
+
