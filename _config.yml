@@ -1,22 +1,26 @@
 # Setup
-title:               'Min Yang Jung'
-tagline:             "Software, Safety, Medical Robotics"
-description:         'A reserved <a href="https://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-#url:                 http://127.0.0.1:4000
+title: 'Min Yang Jung'
+tagline: 'Software, Safety, Medical Robotics'
+description: 'I am Min Yang Jung, a software engineering leader in the Bay Area working in the medical robotics industry.'
+
+url:                 http://127.0.0.1:4000
 #baseurl:             ''
-paginate:            5
-permalink:           pretty
+paginate: 5
+paginate_path: "blog/page:num"
+permalink: pretty
+excerpt_separator: <!--more-->
 
 # About/contact
 author:
-  name:              Min Yang Jung
-  url:               https://minyangjung.com
-  email:             contact@minyangjung.com
+  name: Min Yang Jung
+  url: https://minyangjung.com
+  email: contact@minyangjung.com
 
 # Gems
 plugins:
   - jekyll-paginate
+  #- jekyll-sitemap
 
 # Custom vars
-version:             0.0.1
+version: 0.0.1
 google_analytics_id: #UA-XXXX-Y
