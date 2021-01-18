@@ -3,7 +3,7 @@ title: 'Min Yang Jung'
 tagline: 'Software, Safety, Medical Robotics'
 description: 'I am Min Yang Jung, a software engineering leader in the Bay Area working in the medical robotics industry.'
 
-url:                 http://127.0.0.1:4000
+#url:                 http://127.0.0.1:4000
 #baseurl:             ''
 paginate: 5
 paginate_path: "blog/page:num"
