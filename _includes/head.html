@@ -33,13 +33,13 @@
     background-color: #ededed;
     margin-left: 2px;
     padding: 3px 7px;
-    /*
-    color: #818181;
-    line-height: 1.67;*/
     font-size: 12px;
     letter-spacing: 1px;
   }
   </style>
+  {% if site.tags != "" %}
+    {% include compile_tags.html %}
+  {% endif %}
 
   {% if site.google_analytics_id %}
   <script>

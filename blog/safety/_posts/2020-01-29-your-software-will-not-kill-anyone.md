@@ -3,7 +3,7 @@ layout: post
 title: Are you sure your software will not kill anyone?
 date: '2020-01-29 00:00:00'
 tags:
-- medical robotics
+- medical_robotics
 - safety
 - paper
 ---

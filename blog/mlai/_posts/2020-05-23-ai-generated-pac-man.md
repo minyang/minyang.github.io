@@ -3,7 +3,7 @@ layout: post
 title: AI regenerated PAC-MAN
 date: '2020-05-23 00:00:00'
 tags:
-- ML/AI
+- MLAI
 ---
 
 Let's cut to the chase – check out this blog article:

@@ -3,7 +3,7 @@ layout: post
 title: Review paper on robotic spinal surgery
 date: '2020-02-02 00:00:00'
 tags:
-- medical robotics
+- medical_robotics
 - neurosugery
 - paper
 ---

@@ -1,7 +1,7 @@
 # Setup
 title: 'Min Yang Jung'
-tagline: 'Software, Safety, Medical Robotics'
-description: 'I am Min Yang Jung, a software engineering leader in the Bay Area working in the medical robotics industry.'
+tagline: 'Software, Safety, and Medical Robotics'
+description: '<b>Min Yang Jung</b> works in the medical robotics industry developing products to enhance minimal invasive surgery.'
 
 #url:                 http://127.0.0.1:4000
 #baseurl:             ''
@@ -20,6 +20,9 @@ author:
 plugins:
   - jekyll-paginate
   #- jekyll-sitemap
+
+tag_page_layout: tag
+tag_page_dir: tag
 
 # Custom vars
 version: 0.0.1
