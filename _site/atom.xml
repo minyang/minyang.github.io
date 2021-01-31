@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Min Yang Jung</title>
- <link href="/atom.xml" rel="self"/>
- <link href="/"/>
- <updated>2021-01-30T21:18:31-08:00</updated>
- <id></id>
+ <link href="http://minyangjung.com/atom.xml" rel="self"/>
+ <link href="http://minyangjung.com/"/>
+ <updated>2021-01-30T21:30:08-08:00</updated>
+ <id>http://minyangjung.com</id>
  <author>
    <name>Min Yang Jung</name>
    <email>contact@minyangjung.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Bash Tips and Code Examples</title>
-   <link href="/blog/software/bash/2021/01/18/bash-tips/"/>
+   <link href="http://minyangjung.com/blog/software/bash/2021/01/18/bash-tips/"/>
    <updated>2021-01-18T21:12:54-08:00</updated>
-   <id>/blog/software/bash/2021/01/18/bash-tips</id>
+   <id>http://minyangjung.com/blog/software/bash/2021/01/18/bash-tips</id>
    <content type="html">&lt;p&gt;For the past couple years at work, I have been writing quite a bit of shell scripts for
 multiple projects.  Most of them are to leverage the power of the shell
 scripts to automate development workflows such as build, packaging, deploy, and software release.&lt;/p&gt;
@@ -285,9 +285,9 @@ useful for such a case:&lt;/p&gt;
  
  <entry>
    <title>Working with Binary Files</title>
-   <link href="/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files/"/>
+   <link href="http://minyangjung.com/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files/"/>
    <updated>2021-01-10T20:04:54-08:00</updated>
-   <id>/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files</id>
+   <id>http://minyangjung.com/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files</id>
    <content type="html">&lt;p&gt;I am a huge fan of vim.  I don’t even know how to quit Emacs :) Whichever system I
 happen to work on, the very first tool I always check and customize is vim.  After trying
 out a variety of plug-ins and auxilary tools around vim, I settled down with my own vimrc
@@ -331,9 +331,9 @@ the last byte:&lt;/p&gt;
  
  <entry>
    <title>Maker's Schedule, Manager's Schedule</title>
-   <link href="/blog/management/2020/08/21/makers-schedule-managers-schedule/"/>
+   <link href="http://minyangjung.com/blog/management/2020/08/21/makers-schedule-managers-schedule/"/>
    <updated>2020-08-21T00:00:00-07:00</updated>
-   <id>/blog/management/2020/08/21/makers-schedule-managers-schedule</id>
+   <id>http://minyangjung.com/blog/management/2020/08/21/makers-schedule-managers-schedule</id>
    <content type="html">&lt;p&gt;I just came across an article titled &lt;a href=&quot;http://www.paulgraham.com/makersschedule.html&quot;&gt;maker’s schedule, manager’s schedule&lt;/a&gt;.  It was
 published a bit while ago (July 2009).  It describes the two types of schedule – maker’s
 and manager’s – and expands the nature of each.  Essentially, the manager’s schedule runs
@@ -355,9 +355,9 @@ balancing out the maker’s and manager’s schedule.&lt;/p&gt;
  
  <entry>
    <title>AI regenerated PAC-MAN</title>
-   <link href="/blog/mlai/2020/05/23/ai-generated-pac-man/"/>
+   <link href="http://minyangjung.com/blog/mlai/2020/05/23/ai-generated-pac-man/"/>
    <updated>2020-05-23T00:00:00-07:00</updated>
-   <id>/blog/mlai/2020/05/23/ai-generated-pac-man</id>
+   <id>http://minyangjung.com/blog/mlai/2020/05/23/ai-generated-pac-man</id>
    <content type="html">&lt;p&gt;Let’s cut to the chase – check out this blog article:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://blogs.nvidia.com/blog/2020/05/22/gamegan-research-pacman-anniversary&quot;&gt;PAC-MAN Recreated with AI by NVIDIA Researchers&lt;/a&gt; (from NVIDIA blog)&lt;/p&gt;
@@ -381,9 +381,9 @@ appears something that I’d definitely love to dig more into.&lt;/p&gt;
  
  <entry>
    <title>Google's Monolithic Repo</title>
-   <link href="/blog/software/tools/2020/02/09/google-monorepo/"/>
+   <link href="http://minyangjung.com/blog/software/tools/2020/02/09/google-monorepo/"/>
    <updated>2020-02-09T00:00:00-08:00</updated>
-   <id>/blog/software/tools/2020/02/09/google-monorepo</id>
+   <id>http://minyangjung.com/blog/software/tools/2020/02/09/google-monorepo</id>
    <content type="html">&lt;p&gt;How do you maintain source code of your project?  Of course, you probably use one of
 version control software like git, svn, and Perforce.  Those off-the-shelf tools should
 work for the most of personal and small/medium-sized projects.  As the scale and
@@ -491,9 +491,9 @@ adopted the mono-repo model but with different approaches/solutions&lt;/p&gt;
  
  <entry>
    <title>Review paper on robotic spinal surgery</title>
-   <link href="/blog/robotics/2020/02/02/review-paper-spinal-surgery/"/>
+   <link href="http://minyangjung.com/blog/robotics/2020/02/02/review-paper-spinal-surgery/"/>
    <updated>2020-02-02T00:00:00-08:00</updated>
-   <id>/blog/robotics/2020/02/02/review-paper-spinal-surgery</id>
+   <id>http://minyangjung.com/blog/robotics/2020/02/02/review-paper-spinal-surgery</id>
    <content type="html">&lt;p&gt;I recently came across a review paper on robot-assisted spinal surgeries from Stanford (published on November 7, 2019):&lt;/p&gt;
 
 &lt;ul&gt;
@@ -517,9 +517,9 @@ the area of neurosurgery.&lt;/p&gt;
  
  <entry>
    <title>Are you sure your software will not kill anyone?</title>
-   <link href="/blog/safety/2020/01/29/your-software-will-not-kill-anyone/"/>
+   <link href="http://minyangjung.com/blog/safety/2020/01/29/your-software-will-not-kill-anyone/"/>
    <updated>2020-01-29T00:00:00-08:00</updated>
-   <id>/blog/safety/2020/01/29/your-software-will-not-kill-anyone</id>
+   <id>http://minyangjung.com/blog/safety/2020/01/29/your-software-will-not-kill-anyone</id>
    <content type="html">&lt;p&gt;Yes, it may sound a bit bold, especially for those who work in medical robotics industry.
 It is actually the title of an article recently published in the Communications of the ACM
 (Vol 63, Issue 2, Feb 2020):&lt;/p&gt;
@@ -585,9 +585,9 @@ The second book in my bookshelf.  More recently updated materials with modern co
  
  <entry>
    <title>Writing Better Embedded Software</title>
-   <link href="/blog/software/c++/2019/03/10/writing-better-embedded-software/"/>
+   <link href="http://minyangjung.com/blog/software/c++/2019/03/10/writing-better-embedded-software/"/>
    <updated>2019-03-10T20:04:54-07:00</updated>
-   <id>/blog/software/c++/2019/03/10/writing-better-embedded-software</id>
+   <id>http://minyangjung.com/blog/software/c++/2019/03/10/writing-better-embedded-software</id>
    <content type="html">&lt;p&gt;I came across a video recording of a &lt;a href=&quot;https://isocpp.org/blog/2019/03/writing-better-embedded-software-dan-saks-keynote-meeting-embedded-2018&quot;&gt;key note talk by Dan
 Saks&lt;/a&gt;
 from Meeting Embedded 2018.  Dan Saks, who served as secretary of the ANSI
@@ -606,9 +606,9 @@ software developers think.&lt;/p&gt;
  
  <entry>
    <title>ROBODOC® System</title>
-   <link href="/blog/robotics/2016/12/31/robodoc/"/>
+   <link href="http://minyangjung.com/blog/robotics/2016/12/31/robodoc/"/>
    <updated>2016-12-31T06:45:00-08:00</updated>
-   <id>/blog/robotics/2016/12/31/robodoc</id>
+   <id>http://minyangjung.com/blog/robotics/2016/12/31/robodoc</id>
    <content type="html">&lt;p&gt;When I decided to work on the software system safety as my PhD thesis topic, it
 didn’t take long before I realized safety in the medical robotics domain had not
 yet been formulated as a well-defined research problem.  Although virtually

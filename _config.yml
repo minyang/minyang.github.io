@@ -3,7 +3,7 @@ title: 'Min Yang Jung'
 tagline: 'Software, Safety, and Medical Robotics'
 description: '<b>Min Yang Jung</b> works in the medical device industry developing products for the da Vinci surgical systems.'
 
-#url:                 http://127.0.0.1:4000
+url:                 'http://minyangjung.com'
 #baseurl:             ''
 paginate: 5
 paginate_path: "blog/page:num"
@@ -20,7 +20,7 @@ author:
 plugins:
   - jekyll-paginate
   - jekyll-feed
-  #- jekyll-sitemap
+  - jekyll-sitemap
 
 tag_page_layout: tag
 tag_page_dir: tag
