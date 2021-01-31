@@ -19,6 +19,7 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-feed
   #- jekyll-sitemap
 
 tag_page_layout: tag
