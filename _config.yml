@@ -3,7 +3,7 @@ title: 'Min Yang Jung'
 tagline: 'Software, Safety, and Medical Robotics'
 description: '<b>Min Yang Jung</b> works in the medical device industry developing products for the da Vinci surgical systems.'
 
-url:                 'http://minyangjung.com'
+#url:                 'http://minyangjung.com'
 #baseurl:             ''
 paginate: 5
 paginate_path: "blog/page:num"
