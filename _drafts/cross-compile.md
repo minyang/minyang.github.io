@@ -19,3 +19,12 @@ In order to figure out the default paths used by `gcc`/`g++`, as well as their p
 
 echo | ./x86\_64-poky-linux-g++ -Wp,-v -x c++ - -fsyntax-only
 
+
+
+ld, ar, ranlib, strip
+
+https://stackoverflow.com/questions/47910759/what-is-the-difference-between-ranlib-ar-and-ld-for-making-libraries
+
+stripping: 
+
+https://www.technovelty.org/linux/stripping-shared-libraries.html
