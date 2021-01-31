@@ -9,7 +9,7 @@ tags:
 - development
 ---
 
-I am a huge fan of vim.  I don't even know how to quit eclipse :) Whichever system I
+I am a huge fan of vim.  I don't even know how to quit Emacs :) Whichever system I
 happen to work on, the very first tool I always check and customize is vim.  After trying
 out a variety of plug-ins and auxilary tools around vim, I settled down with my own vimrc
 file and ended up using the exvim as my favorite editor.  Perhaps my own customization
