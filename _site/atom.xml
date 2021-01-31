@@ -4,7 +4,7 @@
  <title>Min Yang Jung</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2021-01-30T17:13:43-08:00</updated>
+ <updated>2021-01-30T20:26:39-08:00</updated>
  <id></id>
  <author>
    <name>Min Yang Jung</name>
@@ -288,7 +288,7 @@ useful for such a case:&lt;/p&gt;
    <link href="/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files/"/>
    <updated>2021-01-10T20:04:54-08:00</updated>
    <id>/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files</id>
-   <content type="html">&lt;p&gt;I am a huge fan of vim.  I don’t even know how to quit eclipse :) Whichever system I
+   <content type="html">&lt;p&gt;I am a huge fan of vim.  I don’t even know how to quit Emacs :) Whichever system I
 happen to work on, the very first tool I always check and customize is vim.  After trying
 out a variety of plug-ins and auxilary tools around vim, I settled down with my own vimrc
 file and ended up using the exvim as my favorite editor.  Perhaps my own customization
