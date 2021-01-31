@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Bash Tips and Code Examples &middot; Min Yang Jung
+    
+  </title>
+
+  
+
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <style>
+  .tag {
+    font-family: 'Lato', Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #ededed;
+    margin-left: 2px;
+    padding: 3px 7px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  </style>
+  
+    
+
+
+
+
+
+
+  
+
+  
+</head>
+
+
+  <body class="sidebar-overlay">
+
+    
+
+
+
+
+<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<!--<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox" checked>-->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div><center>
+    <img src='/assets/profile.jpg' style='border-radius: 50%; margin-top: 40px;' width='60%'>
+  </center></div>
+  <div class="sidebar-item">
+    <p><b>Min Yang Jung</b> works in the medical device industry developing products for the da Vinci surgical systems.</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">Home</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">About Me</a>
+        
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/publications/">Publications</a>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+
+    <!--<a class="sidebar-nav-item" href="/archive/v0.0.1.zip">Download</a>
+    <a class="sidebar-nav-item" href="">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v0.0.1</span>-->
+    <a class="sidebar-nav-item" href="/blog">Blog</a>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      <a href="http://minyangjung.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/><path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/></svg></a>&nbsp;&nbsp;
+      <a href="http://github.com/minyang" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>&nbsp;&nbsp;
+      <a href="https://www.linkedin.com/in/min-yang-jung-763b5839" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/></svg></a>&nbsp;&nbsp;
+      <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#99;&#111;&#110;&#116;&#97;&#99;&#116;&#64;&#109;&#105;&#110;&#121;&#97;&#110;&#103;&#106;&#117;&#110;&#103;&#46;&#99;&#111;&#109;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/></svg></a>
+    </p>
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Min Yang Jung</a>
+            <small>&nbsp;&nbsp;Software, Safety, and Medical Robotics</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">Bash Tips and Code Examples</h1>
+  <span class="post-date">Min Yang Jung | 18 Jan 2021</span>
+  <ul><li><a href="#logging">Logging</a><ul><li><a href="#showing-messages-while-logging-to-file">Showing messages while logging to file</a></li><li><a href="#colored-output">Colored Output</a></li></ul></li><li><a href="#debugging">Debugging</a><ul><li><a href="#run-run-command-with-error-handling-and-call-stack"><code class="language-plaintext highlighter-rouge">run()</code>: Run command with error handling and call stack</a></li></ul></li><li><a href="#shortcuts">Shortcuts</a></li><li><a href="#others">Others</a><ul><li><a href="#get-path-directory-and-name-of-the-current-script">Get path, directory, and name of the current script</a></li><li><a href="#measure-and-print-elapsed-time-in-human-readable-format">Measure and print elapsed time in human readable format</a></li></ul></li><li><a href="#other-articles">Other Articles</a></li></ul>
+
+  <p>For the past couple years at work, I have been writing quite a bit of shell scripts for
+multiple projects.  Most of them are to leverage the power of the shell
+scripts to automate development workflows such as build, packaging, deploy, and software release.</p>
+
+<p>Among <a href="https://en.wikipedia.org/wiki/Comparison_of_command_shells">many variants of shells</a>,
+I primarily use <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">Bash</a> whenever
+possible.  Over time, I noticed that there are some code snippets that I have
+been repeatedly using and certain tips I found useful when writing and debugging
+bash scripts.  This post compiles such code snippets and tips.</p>
+
+<p>Hope you find these useful as well.  Enjoy Bash-ing!</p>
+
+<h2 id="logging">Logging</h2>
+
+<h3 id="showing-messages-while-logging-to-file">Showing messages while logging to file</h3>
+
+<p>Sometimes it is necessary to show messages to the console, i.e., the standard
+output (<code class="language-plaintext highlighter-rouge">stdout</code>) and the standard error (<code class="language-plaintext highlighter-rouge">stderr</code>)
+while dumping those messages to a log file.  This can be easily
+achieved in Bash using the <code class="language-plaintext highlighter-rouge">exec</code> command.  <code class="language-plaintext highlighter-rouge">exec</code> is a built-in Bash command that
+can redirect the output of the current process.  Combined with <code class="language-plaintext highlighter-rouge">tee</code>, we can use
+<code class="language-plaintext highlighter-rouge">exec</code> as follows:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">log_file</span><span class="o">=</span><span class="s2">"/tmp/log.txt"</span>
+<span class="nb">exec</span> <span class="o">&gt;</span>  <span class="o">&gt;(</span><span class="nb">tee</span> <span class="nt">-ia</span> <span class="nv">$log_file</span><span class="o">)</span>
+<span class="nb">exec </span>2&gt; <span class="o">&gt;(</span><span class="nb">tee</span> <span class="nt">-ia</span> <span class="nv">$log_file</span> <span class="o">&gt;</span>&amp;2<span class="o">)</span>
+</code></pre></div></div>
+
+<h3 id="colored-output">Colored Output</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NC</span><span class="o">=</span><span class="s1">'\033[0m'</span>
+<span class="nv">BLACK</span><span class="o">=</span><span class="s1">'\033[0;30m'</span>
+<span class="nv">RED</span><span class="o">=</span><span class="s1">'\033[0;31m'</span>
+<span class="nv">GREEN</span><span class="o">=</span><span class="s1">'\033[0;32m'</span>
+<span class="nv">YELLOW</span><span class="o">=</span><span class="s1">'\033[0;33m'</span>
+<span class="nv">BLUE</span><span class="o">=</span><span class="s1">'\033[0;34m'</span>
+<span class="nv">PURPLE</span><span class="o">=</span><span class="s1">'\033[0;35m'</span>
+<span class="nv">CYAN</span><span class="o">=</span><span class="s1">'\033[0;36m'</span>
+<span class="nv">WHITE</span><span class="o">=</span><span class="s1">'\033[1;37m'</span>
+
+fatal<span class="o">()</span>   <span class="o">{</span> <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">RED</span><span class="k">}</span><span class="s2">ERROR: </span><span class="nv">$1</span><span class="k">${</span><span class="nv">NC</span><span class="k">}</span><span class="s2">"</span><span class="p">;</span> <span class="nb">exit </span>1<span class="p">;</span> <span class="o">}</span>
+error<span class="o">()</span>   <span class="o">{</span> <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">RED</span><span class="k">}</span><span class="s2">ERROR: </span><span class="nv">$1</span><span class="k">${</span><span class="nv">NC</span><span class="k">}</span><span class="s2">"</span><span class="p">;</span> <span class="o">}</span>
+warning<span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">YELLOW</span><span class="k">}</span><span class="nv">$1</span><span class="k">${</span><span class="nv">NC</span><span class="k">}</span><span class="s2">"</span><span class="p">;</span> <span class="o">}</span>
+info<span class="o">()</span>    <span class="o">{</span> <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">GREEN</span><span class="k">}</span><span class="nv">$1</span><span class="k">${</span><span class="nv">NC</span><span class="k">}</span><span class="s2">"</span><span class="p">;</span> <span class="o">}</span>
+message<span class="o">()</span> <span class="o">{</span> <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span><span class="p">;</span> <span class="o">}</span>
+debug<span class="o">()</span>   <span class="o">{</span> <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="k">${</span><span class="nv">CYAN</span><span class="k">}</span><span class="nv">$1</span><span class="k">${</span><span class="nv">NC</span><span class="k">}</span><span class="s2">"</span><span class="p">;</span> <span class="o">}</span>
+</code></pre></div></div>
+
+<h2 id="debugging">Debugging</h2>
+
+<p><a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/sect_02_03.html">Debugging Bash scripts</a>
+from the <a href="https://tldp.org/LDP/Bash-Beginners-Guide/html/index.html">Bash Guide for Beginners</a></p>
+
+<h3 id="run-run-command-with-error-handling-and-call-stack"><code class="language-plaintext highlighter-rouge">run()</code>: Run command with error handling and call stack</h3>
+
+<p>One of the recurring patterns with bash scripts is to run a command, check if the command
+succeeds, and exit immediately with an error message if the command failed.  For example,
+let’s say I want to recursively copy <code class="language-plaintext highlighter-rouge">src_dir</code> to <code class="language-plaintext highlighter-rouge">dest_dir</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nv">$dest_dir</span>
+<span class="nb">cp</span> <span class="nt">-R</span> <span class="nv">$src_dir</span> <span class="nv">$dest_dir</span>
+</code></pre></div></div>
+
+<p>Of course, adding a bit of error handling:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nv">$dest_dir</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">echo</span> <span class="s2">"ERROR: Failed to create </span><span class="nv">$dest_dir</span><span class="s2">"</span>
+  <span class="nb">exit </span>1
+<span class="k">fi
+
+</span><span class="nb">cp</span> <span class="nt">-R</span> <span class="nv">$src_dir</span> <span class="nv">$dest_dir</span>
+<span class="k">if</span> <span class="o">[</span> <span class="nv">$?</span> <span class="nt">-ne</span> 0 <span class="o">]</span><span class="p">;</span> <span class="k">then
+  </span><span class="nb">echo</span> <span class="s2">"ERROR: Failed to copy </span><span class="nv">$src_dir</span><span class="s2"> to </span><span class="nv">$dest_dir</span><span class="s2">"</span>
+  <span class="nb">exit </span>1
+<span class="k">fi</span>
+</code></pre></div></div>
+
+<p>This simple error handling may work if this code was part of a single script.  If it
+was, however, one of bash scripts that were sourced or executed by another scripts
+possibly with multiple depths of caller functions, it is not straightforward to
+identify the exact spot of a failure based on such a simple error message.</p>
+
+<p>In this situation, wouldn’t it be nice if we could print out a user-defined error message
+with a call stack that shows file names and line numbers?  <code class="language-plaintext highlighter-rouge">run()</code> is a small helper
+function that does exactly this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#</span>
+<span class="c"># How to use:</span>
+<span class="c">#</span>
+<span class="c"># $ run "&lt;mssage&gt;"\</span>
+<span class="c">#       "&lt;command&gt;"\</span>
+<span class="c">#       "&lt;error mssage&gt;"</span>
+<span class="c">#</span>
+<span class="c"># If DEBUG is defined as a non-empty value, &lt;message&gt; and &lt;command&gt;</span>
+<span class="c"># are printed out as well.</span>
+<span class="c">#</span>
+run<span class="o">()</span> <span class="o">{</span>
+  <span class="nb">local </span><span class="nv">msg</span><span class="o">=</span><span class="nv">$1</span>      <span class="c"># message to print</span>
+  <span class="nb">local </span><span class="nv">cmd</span><span class="o">=</span><span class="nv">$2</span>      <span class="c"># command to run</span>
+  <span class="nb">local </span><span class="nv">err_msg</span><span class="o">=</span><span class="nv">$3</span>  <span class="c"># error message to print if cmdn fails</span>
+
+  <span class="nb">echo</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$msg</span><span class="s2"> ... "</span>
+  <span class="k">if</span> <span class="o">[</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$DEBUG</span><span class="s2">"</span> <span class="o">]</span><span class="p">;</span> <span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"</span><span class="nv">$cmd</span><span class="s2">"</span>
+    <span class="nb">eval</span> <span class="s2">"</span><span class="nv">$cmd</span><span class="s2">"</span>
+    <span class="nv">result</span><span class="o">=</span><span class="nv">$?</span>
+  <span class="k">else
+    </span><span class="nb">eval</span> <span class="s2">"</span><span class="nv">$cmd</span><span class="s2">"</span> 2&gt;&amp;1 <span class="o">&gt;</span> /dev/null
+    <span class="nv">result</span><span class="o">=</span><span class="nv">$?</span>
+  <span class="k">fi</span>
+
+  <span class="o">[</span> <span class="nv">$result</span> <span class="nt">-eq</span> 0 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="o">{</span> <span class="nb">echo</span> <span class="s2">"OK"</span><span class="p">;</span> <span class="k">return</span><span class="p">;</span> <span class="o">}</span>
+
+  <span class="nb">echo</span> <span class="s2">"</span><span class="nv">$err_msg</span><span class="s2">"</span>
+  <span class="nb">echo</span> <span class="s2">"-- Failed command: </span><span class="nv">$cmd</span><span class="s2">"</span>
+  <span class="nb">echo</span> <span class="s2">"-- Call stack:"</span>
+
+  <span class="nv">count</span><span class="o">=</span>0
+  <span class="k">for </span>src <span class="k">in</span> <span class="k">${</span><span class="nv">BASH_SOURCE</span><span class="p">[*]</span><span class="k">}</span><span class="p">;</span> <span class="k">do</span>
+    <span class="o">[</span> <span class="nv">$count</span> <span class="nt">-eq</span> 0 <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nv">line</span><span class="o">=</span><span class="nv">$LINENO</span> <span class="o">||</span> <span class="nv">line</span><span class="o">=</span><span class="k">${</span><span class="nv">BASH_LINENO</span><span class="p">[count-1]</span><span class="k">}</span>
+    echo_yellow <span class="s2">"[</span><span class="nv">$count</span><span class="s2">] </span><span class="nv">$src</span><span class="s2">:</span><span class="nv">$line</span><span class="s2">"</span>
+    <span class="o">((</span>count++<span class="o">))</span>
+  <span class="k">done</span>
+  <span class="o">[</span> <span class="nt">-n</span> <span class="s2">"</span><span class="nv">$BASE_ERROR_CODE</span><span class="s2">"</span> <span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="nb">exit</span> <span class="nv">$BASE_ERROR_CODE</span> <span class="o">||</span> <span class="nb">exit </span>1
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>A few examples showing how to use it:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>run <span class="s2">"Executing a single command"</span><span class="se">\</span>
+    <span class="s2">"mkdir </span><span class="nv">$dest_dir</span><span class="s2">"</span><span class="se">\</span>
+    <span class="s2">"Failed to create dest directory: </span><span class="nv">$dest_dir</span><span class="s2">"</span>
+
+run <span class="s2">"Executing multiple commands"</span><span class="se">\</span>
+    <span class="s2">"mkdir </span><span class="nv">$dest_dir</span><span class="s2"> &amp;&amp; </span><span class="se">\</span><span class="s2">
+     cp -R </span><span class="nv">$src_dir</span><span class="s2"> </span><span class="nv">$dest_dir</span><span class="s2">"</span><span class="se">\</span>
+    <span class="s2">"Failed to run multiple commands"</span>
+
+run <span class="s2">"Executing a single command and store result in the variable"</span><span class="se">\</span>
+    <span class="s2">"files=</span><span class="si">$(</span>find <span class="nb">.</span> <span class="nt">-type</span> f <span class="nt">-name</span> <span class="s1">'*.png'</span><span class="si">)</span><span class="s2">"</span><span class="se">\</span>
+    <span class="s2">"Failed to create dest directory: </span><span class="nv">$dest_dir</span><span class="s2">"</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="k">${</span><span class="nv">files</span><span class="p">[@]</span><span class="k">}</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="shortcuts">Shortcuts</h2>
+
+<p>A short list of bash shortcuts that I frequently use:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Navigation</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">a</code></td>
+      <td>Go to the beginning of the line</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">e</code></td>
+      <td>Go to the end of the line</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">x</code>+<code class="language-plaintext highlighter-rouge">x</code></td>
+      <td>Toggle between the current position and the beginning of the line</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Alt</code>+<code class="language-plaintext highlighter-rouge">f</code></td>
+      <td>Move the cursor forward by one word</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Alt</code>+<code class="language-plaintext highlighter-rouge">b</code></td>
+      <td>Move the cursor backward by one word</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Shell</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">d</code></td>
+      <td>Exit the current shell</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">l</code></td>
+      <td>Clear the current shell screen.  Same as <code class="language-plaintext highlighter-rouge">clear</code> command.</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Editing</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">k</code></td>
+      <td>Remove the line from the cursor to the end of the line</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Ctrl</code>+<code class="language-plaintext highlighter-rouge">u</code></td>
+      <td>Remove the line from the cursor to the beginning of the line</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>TIP:</strong> To use <code class="language-plaintext highlighter-rouge">Alt</code> in Mac, turn on <code class="language-plaintext highlighter-rouge">Use Option as Meta Key</code>:</p>
+
+<p><img src="/assets/mac-shell-enable-option-as-meta-key.png" alt="Mac-shell-profile-setting" /></p>
+
+<h2 id="others">Others</h2>
+
+<h3 id="get-path-directory-and-name-of-the-current-script">Get path, directory, and name of the current script</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">SCRIPT_PATH</span><span class="o">=</span><span class="si">$(</span><span class="nb">realpath</span> <span class="nv">$0</span><span class="si">)</span>
+<span class="nv">SCRIPT_DIR</span><span class="o">=</span><span class="si">$(</span><span class="nb">dirname</span> <span class="s2">"</span><span class="k">${</span><span class="nv">SCRIPT_PATH</span><span class="k">}</span><span class="s2">"</span><span class="si">)</span>
+<span class="nv">SCRIPT_NAME</span><span class="o">=</span><span class="si">$(</span><span class="nb">basename</span> <span class="s2">"</span><span class="k">${</span><span class="nv">SCRIPT_PATH</span><span class="k">}</span><span class="s2">"</span><span class="si">)</span>
+</code></pre></div></div>
+
+<p>If <code class="language-plaintext highlighter-rouge">realpath</code> is not available (e.g., on Mac):</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">SCRIPT_PATH</span><span class="o">=</span><span class="s2">"</span><span class="si">$(</span><span class="nb">cd</span> <span class="s2">"</span><span class="si">$(</span><span class="nb">dirname</span> <span class="s2">"</span><span class="k">${</span><span class="nv">BASH_SOURCE</span><span class="p">[0]</span><span class="k">}</span><span class="s2">"</span><span class="si">)</span><span class="s2">"</span> <span class="o">&amp;&amp;</span> <span class="nb">pwd</span><span class="si">)</span><span class="s2">/</span><span class="si">$(</span><span class="nb">basename</span> <span class="s2">"</span><span class="k">${</span><span class="nv">BASH_SOURCE</span><span class="p">[0]</span><span class="k">}</span><span class="s2">"</span><span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h3 id="measure-and-print-elapsed-time-in-human-readable-format">Measure and print elapsed time in human readable format</h3>
+
+<p>It is sometimes necessary to measure time to execute a code block and print the
+elapsed time in a human readable format.  The following code snippets could be
+useful for such a case:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>convertsecs<span class="o">()</span> <span class="o">{</span>
+  <span class="o">((</span><span class="nv">h</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span>/3600<span class="o">))</span>
+  <span class="o">((</span><span class="nv">m</span><span class="o">=(</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span>%3600<span class="o">)</span>/60<span class="o">))</span>
+  <span class="o">((</span><span class="nv">s</span><span class="o">=</span><span class="k">${</span><span class="nv">1</span><span class="k">}</span>%60<span class="o">))</span>
+  <span class="nb">printf</span> <span class="s2">"%02d:%02d:%02d</span><span class="se">\n</span><span class="s2">"</span> <span class="nv">$h</span> <span class="nv">$m</span> <span class="nv">$s</span>
+<span class="o">}</span>
+
+<span class="nv">tic</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> +<span class="s1">'%s'</span><span class="si">)</span>  <span class="c"># '%s.%N' for nanoseconds if the system supports</span>
+<span class="c">#</span>
+<span class="c"># &lt;do something here&gt;</span>
+<span class="c">#</span>
+<span class="nv">toc</span><span class="o">=</span><span class="si">$(</span><span class="nb">date</span> +<span class="s1">'%s'</span><span class="si">)</span>
+<span class="nv">elapsed</span><span class="o">=</span><span class="k">$((</span><span class="nv">$toc</span> <span class="o">-</span> <span class="nv">$tic</span><span class="k">))</span>
+
+<span class="nb">echo</span> <span class="s2">"Elapsed time: </span><span class="si">$(</span>convertsecs <span class="nv">$elapsed</span><span class="si">)</span><span class="s2">"</span>
+</code></pre></div></div>
+
+<h2 id="other-articles">Other Articles</h2>
+
+<ul>
+  <li><a href="https://opensource.com/article/18/5/bash-tricks">Bash tips for everyday at the command line</a></li>
+</ul>
+
+  <div style="text-align:right; width:100%">
+    <!--<span class="post-date" style="float:left">18 Jan 2021</span>-->
+    
+      <i class="bi bi-tags"></i>
+      
+        
+        <a href="/tag/software"><span class="tag">SOFTWARE</span></a>
+      
+        
+        <a href="/tag/development"><span class="tag">DEVELOPMENT</span></a>
+      
+        
+        <a href="/tag/linux"><span class="tag">LINUX</span></a>
+      
+        
+        <a href="/tag/bash"><span class="tag">BASH</span></a>
+      
+    
+  </div>
+</div>
+
+
+<div class="related">
+  <h2>Related posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files/">
+            Working with Binary Files
+            <small>10 Jan 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blog/management/2020/08/21/makers-schedule-managers-schedule/">
+            Maker's Schedule, Manager's Schedule
+            <small>21 Aug 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/blog/mlai/2020/05/23/ai-generated-pac-man/">
+            AI regenerated PAC-MAN
+            <small>23 May 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script src='/public/js/script.js'></script>
+  </body>
+</html>

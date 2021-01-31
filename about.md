@@ -1,14 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
 ---
 
-<!-- vim-markdown-toc GFM -->
-
-* [My PhD Research](#my-phd-research)
-* [Outside of Work](#outside-of-work)
-
-<!-- vim-markdown-toc -->
 ![about](/assets/about.jpg)
 
 Hello, thanks for visiting my personal website.
@@ -17,14 +11,6 @@ I am a Software Engineering Manager at Intuitive Surgical, Inc. (Sunnyvale, CA,
 USA) that develops and manufactures the da Vinci® Surgical System to enable
 surgeons to perform delicate and complex operations through a few small
 incisions (minimally invasive surgery).
-
-As manager, lead team to develop future product
-embedded - all the way to apps implementing features
-
-still do hands on as IC (scripting for integration)
-
-Areas I work: Cybersecurity, system integration, ...
-
 
 I really enjoy designing and building robot software systems. I am always
 fascinated by carefully structured and implemented software systems that are
@@ -82,14 +68,6 @@ cisstRobot (computational tools and algorithms for robotics).
 Outside the work, I am an avid skier and enjoy tennis and biking. I have a KSIA
 Level 2 ski instructor’s license (comparable to CSIA Level 2~3) and my National
 Tennis Rating Program (NTRP) level (used by the USTA) is around 3.5~4.0.
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
 
 <p>
 As an individual contributor,
