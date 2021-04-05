@@ -9,7 +9,7 @@
 
   <title>
     
-      Working with Binary Files &middot; Min Yang Jung
+      How to add new systemd services in Linux &middot; Min Yang Jung
     
   </title>
 
@@ -207,62 +207,67 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Working with Binary Files</h1>
-  <span class="post-date">Min Yang Jung | 10 Jan 2021</span>
-  
+  <h1 class="post-title">How to add new systemd services in Linux</h1>
+  <span class="post-date">Min Yang Jung | 05 Apr 2021</span>
+  <ul><li><a href="#basics-on-systemd-services">Basics on Systemd Services</a></li><li><a href="#notes">Notes</a><ul><li><a href="#location-of-service-unit-files">Location of Service Unit Files</a></li><li><a href="#editing-and-testing-service-files">Editing and Testing Service Files</a></li></ul></li></ul>
 
-  <p>I am a huge fan of vim.  I don’t even know how to quit Emacs :) Whichever system I
-happen to work on, the very first tool I always check and customize is vim.  After trying
-out a variety of plug-ins and auxilary tools around vim, I settled down with my own vimrc
-file and ended up using the exvim as my favorite editor.  Perhaps my own customization
-around vim may deserve a separate write-up.</p>
+  <h2 id="basics-on-systemd-services">Basics on Systemd Services</h2>
 
-<p>Anyway, I recently had to work with binary files and learned that vim already provides
-a nice way to work with binary files.</p>
-
-<p>When vim loads up a binry file, its content may look like this:</p>
-
-<p><img src="/assets/vim-binary-1.png" alt="vim-binary-1" /></p>
-
-<p>With <code class="language-plaintext highlighter-rouge">:%!xxd</code>, it shows up as follows:</p>
-
-<p><img src="/assets/vim-binary-2.png" alt="vim-binary-2" /></p>
-
-<p>Enabling syntax coloring makes it more readable: <code class="language-plaintext highlighter-rouge">:set ft=xxd</code></p>
-
-<p><img src="/assets/vim-binary-3.png" alt="vim-binary-3" /></p>
-
-<p>At this point, it is possible to directly change hex values on the left side.  Once
-changes are completed, we need to go back to the previous mode before updating the file: <code class="language-plaintext highlighter-rouge">:%!xxd -r</code>.
-We can then now save the changes to file by <code class="language-plaintext highlighter-rouge">:w</code>.</p>
-
-<p>You may notice an extra <code class="language-plaintext highlighter-rouge">0A</code> is added to the end of the file that you just updated.  To truncate
-the last byte:</p>
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">truncate --size=-1 bin_file</code></li>
-  <li><code class="language-plaintext highlighter-rouge">sed '$ s/.$//' bin_file&gt; &gt; output_file</code> (if <code class="language-plaintext highlighter-rouge">truncate</code> is not available)</li>
-</ul>
-
-<p>Lastly, a couple well known tips that may be useful when working with binary files:</p>
+<p>Some articles on the basics of the systemd services in Linux:</p>
 
 <ul>
-  <li>To dump a file in the hex format: <code class="language-plaintext highlighter-rouge">hexdump bin_file</code></li>
-  <li>To diff two binary files: <code class="language-plaintext highlighter-rouge">diff &lt;(xxd binary_file1) &lt;(xxd binary_file2)</code></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files">Understanding Systemd Units and Unit Files</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units">How To Use Systemctl to Manage Systemd Services and Units</a></li>
+  <li><a href="https://www.freedesktop.org/software/systemd/man/systemd.service.html">systemd.service — Service unit configuration</a></li>
+  <li><a href="https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs">How To Use Journalctl to View and Manipulate Systemd Logs</a></li>
 </ul>
+
+<h2 id="notes">Notes</h2>
+
+<h3 id="location-of-service-unit-files">Location of Service Unit Files</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/lib/systemd/system</code>: The default place where service unit files are
+  installed on the system.  Lowest priority.</li>
+  <li><code class="language-plaintext highlighter-rouge">/run/systemd/system</code>: The location for run-time unit definitions.  Higher
+  priority than <code class="language-plaintext highlighter-rouge">/lib/systemd/system</code> but lower than <code class="language-plaintext highlighter-rouge">/etc/systemd/system</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">/etc/systemd/system</code>:  The system-wide unit definitions with the highest
+  priority.  Can override unit files in the other locations on the filesystem.</li>
+</ul>
+
+<h3 id="editing-and-testing-service-files">Editing and Testing Service Files</h3>
+
+<p>Check if a new service is enabled:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>systemctl is-enabled my_new_app.service
+</code></pre></div></div>
+
+<p>Start a new service and verify it is successfully started:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl start my_new_app.service
+systemctl status my_new_app.service
+</code></pre></div></div>
+
+<p>If it fails to start, use <code class="language-plaintext highlighter-rouge">journalctl</code> for detailed logs:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo journalctl -xe
+</code></pre></div></div>
+
+<p>After modifying a service file, the <code class="language-plaintext highlighter-rouge">systemd</code> process should be reloaded:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl daemon-reload
+</code></pre></div></div>
+
 
   <div style="text-align:right; width:100%">
-    <!--<span class="post-date" style="float:left">10 Jan 2021</span>-->
+    <!--<span class="post-date" style="float:left">05 Apr 2021</span>-->
     
       <i class="bi bi-tags"></i>
-      
-        
-        <a href="/tag/vim"><span class="tag">VIM</span></a>
       
         
         <a href="/tag/software"><span class="tag">SOFTWARE</span></a>
       
         
-        <a href="/tag/development"><span class="tag">DEVELOPMENT</span></a>
+        <a href="/tag/linux"><span class="tag">LINUX</span></a>
+      
+        
+        <a href="/tag/system_management"><span class="tag">SYSTEM_MANAGEMENT</span></a>
       
     
   </div>
@@ -275,18 +280,18 @@ the last byte:</p>
     
       <li>
         <h3>
-          <a href="/blog/software/linux/2021/04/05/add-linux-service/">
-            How to add new systemd services in Linux
-            <small>05 Apr 2021</small>
+          <a href="/blog/software/bash/2021/01/18/bash-tips/">
+            Bash Tips and Code Examples
+            <small>18 Jan 2021</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/blog/software/bash/2021/01/18/bash-tips/">
-            Bash Tips and Code Examples
-            <small>18 Jan 2021</small>
+          <a href="/blog/software/tools/2021/01/10/vim-tip-working-with-binary-files/">
+            Working with Binary Files
+            <small>10 Jan 2021</small>
           </a>
         </h3>
       </li>

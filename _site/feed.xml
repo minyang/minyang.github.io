@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-01-30T21:50:51-08:00</updated><id>/feed.xml</id><title type="html">Min Yang Jung</title><subtitle>&lt;b&gt;Min Yang Jung&lt;/b&gt; works in the medical device industry developing products for the da Vinci surgical systems.</subtitle><author><name>Min Yang Jung</name><email>contact@minyangjung.com</email></author><entry><title type="html">Bash Tips and Code Examples</title><link href="/blog/software/bash/2021/01/18/bash-tips/" rel="alternate" type="text/html" title="Bash Tips and Code Examples" /><published>2021-01-18T21:12:54-08:00</published><updated>2021-01-18T21:12:54-08:00</updated><id>/blog/software/bash/2021/01/18/bash-tips</id><content type="html" xml:base="/blog/software/bash/2021/01/18/bash-tips/">&lt;p&gt;For the past couple years at work, I have been writing quite a bit of shell scripts for
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-04-05T11:31:27-07:00</updated><id>/feed.xml</id><title type="html">Min Yang Jung</title><subtitle>&lt;b&gt;Min Yang Jung&lt;/b&gt; works in the medical device industry developing products for the da Vinci surgical systems.</subtitle><author><name>Min Yang Jung</name><email>contact@minyangjung.com</email></author><entry><title type="html">How to add new systemd services in Linux</title><link href="/blog/software/linux/2021/04/05/add-linux-service/" rel="alternate" type="text/html" title="How to add new systemd services in Linux" /><published>2021-04-05T10:32:00-07:00</published><updated>2021-04-05T10:32:00-07:00</updated><id>/blog/software/linux/2021/04/05/add-linux-service</id><content type="html" xml:base="/blog/software/linux/2021/04/05/add-linux-service/">&lt;h2 id=&quot;basics-on-systemd-services&quot;&gt;Basics on Systemd Services&lt;/h2&gt;
+
+&lt;p&gt;Some articles on the basics of the systemd services in Linux:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files&quot;&gt;Understanding Systemd Units and Unit Files&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units&quot;&gt;How To Use Systemctl to Manage Systemd Services and Units&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/systemd.service.html&quot;&gt;systemd.service — Service unit configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs&quot;&gt;How To Use Journalctl to View and Manipulate Systemd Logs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 id=&quot;location-of-service-unit-files&quot;&gt;Location of Service Unit Files&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/lib/systemd/system&lt;/code&gt;: The default place where service unit files are
+  installed on the system.  Lowest priority.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/run/systemd/system&lt;/code&gt;: The location for run-time unit definitions.  Higher
+  priority than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/lib/systemd/system&lt;/code&gt; but lower than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/systemd/system&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/systemd/system&lt;/code&gt;:  The system-wide unit definitions with the highest
+  priority.  Can override unit files in the other locations on the filesystem.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;editing-and-testing-service-files&quot;&gt;Editing and Testing Service Files&lt;/h3&gt;
+
+&lt;p&gt;Check if a new service is enabled:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;systemctl is-enabled my_new_app.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Start a new service and verify it is successfully started:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start my_new_app.service
+systemctl status my_new_app.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If it fails to start, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;journalctl&lt;/code&gt; for detailed logs:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo journalctl -xe
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After modifying a service file, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemd&lt;/code&gt; process should be reloaded:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl daemon-reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Min Yang Jung</name><email>contact@minyangjung.com</email></author><category term="blog" /><category term="software" /><category term="linux" /><category term="software" /><category term="linux" /><category term="system_management" /><summary type="html">Basics on Systemd Services Some articles on the basics of the systemd services in Linux: Understanding Systemd Units and Unit Files How To Use Systemctl to Manage Systemd Services and Units systemd.service — Service unit configuration How To Use Journalctl to View and Manipulate Systemd Logs Notes Location of Service Unit Files /lib/systemd/system: The default place where service unit files are installed on the system. Lowest priority. /run/systemd/system: The location for run-time unit definitions. Higher priority than /lib/systemd/system but lower than /etc/systemd/system. /etc/systemd/system: The system-wide unit definitions with the highest priority. Can override unit files in the other locations on the filesystem. Editing and Testing Service Files Check if a new service is enabled: systemctl is-enabled my_new_app.service Start a new service and verify it is successfully started: sudo systemctl start my_new_app.service systemctl status my_new_app.service If it fails to start, use journalctl for detailed logs: sudo journalctl -xe After modifying a service file, the systemd process should be reloaded: sudo systemctl daemon-reload</summary></entry><entry><title type="html">Bash Tips and Code Examples</title><link href="/blog/software/bash/2021/01/18/bash-tips/" rel="alternate" type="text/html" title="Bash Tips and Code Examples" /><published>2021-01-18T21:12:54-08:00</published><updated>2021-01-18T21:12:54-08:00</updated><id>/blog/software/bash/2021/01/18/bash-tips</id><content type="html" xml:base="/blog/software/bash/2021/01/18/bash-tips/">&lt;p&gt;For the past couple years at work, I have been writing quite a bit of shell scripts for
 multiple projects.  Most of them are to leverage the power of the shell
 scripts to automate development workflows such as build, packaging, deploy, and software release.&lt;/p&gt;
 

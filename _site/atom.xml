@@ -4,13 +4,64 @@
  <title>Min Yang Jung</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2021-01-30T21:50:51-08:00</updated>
+ <updated>2021-04-05T11:31:27-07:00</updated>
  <id></id>
  <author>
    <name>Min Yang Jung</name>
    <email>contact@minyangjung.com</email>
  </author>
 
+ 
+ <entry>
+   <title>How to add new systemd services in Linux</title>
+   <link href="/blog/software/linux/2021/04/05/add-linux-service/"/>
+   <updated>2021-04-05T10:32:00-07:00</updated>
+   <id>/blog/software/linux/2021/04/05/add-linux-service</id>
+   <content type="html">&lt;h2 id=&quot;basics-on-systemd-services&quot;&gt;Basics on Systemd Services&lt;/h2&gt;
+
+&lt;p&gt;Some articles on the basics of the systemd services in Linux:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/understanding-systemd-units-and-unit-files&quot;&gt;Understanding Systemd Units and Unit Files&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units&quot;&gt;How To Use Systemctl to Manage Systemd Services and Units&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/systemd.service.html&quot;&gt;systemd.service — Service unit configuration&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs&quot;&gt;How To Use Journalctl to View and Manipulate Systemd Logs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;
+
+&lt;h3 id=&quot;location-of-service-unit-files&quot;&gt;Location of Service Unit Files&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/lib/systemd/system&lt;/code&gt;: The default place where service unit files are
+  installed on the system.  Lowest priority.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/run/systemd/system&lt;/code&gt;: The location for run-time unit definitions.  Higher
+  priority than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/lib/systemd/system&lt;/code&gt; but lower than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/systemd/system&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/etc/systemd/system&lt;/code&gt;:  The system-wide unit definitions with the highest
+  priority.  Can override unit files in the other locations on the filesystem.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;editing-and-testing-service-files&quot;&gt;Editing and Testing Service Files&lt;/h3&gt;
+
+&lt;p&gt;Check if a new service is enabled:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;systemctl is-enabled my_new_app.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Start a new service and verify it is successfully started:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start my_new_app.service
+systemctl status my_new_app.service
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If it fails to start, use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;journalctl&lt;/code&gt; for detailed logs:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo journalctl -xe
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;After modifying a service file, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;systemd&lt;/code&gt; process should be reloaded:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl daemon-reload
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Bash Tips and Code Examples</title>
