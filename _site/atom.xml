@@ -4,7 +4,7 @@
  <title>Min Yang Jung</title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2021-04-05T11:31:27-07:00</updated>
+ <updated>2021-04-05T11:43:10-07:00</updated>
  <id></id>
  <author>
    <name>Min Yang Jung</name>
@@ -26,6 +26,7 @@
   &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units&quot;&gt;How To Use Systemctl to Manage Systemd Services and Units&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.freedesktop.org/software/systemd/man/systemd.service.html&quot;&gt;systemd.service — Service unit configuration&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs&quot;&gt;How To Use Journalctl to View and Manipulate Systemd Logs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.linode.com/docs/guides/start-service-at-boot&quot;&gt;Use systemd to Start a Linux Service at Boot&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;notes&quot;&gt;Notes&lt;/h2&gt;

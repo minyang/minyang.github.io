@@ -17,6 +17,7 @@ Some articles on the basics of the systemd services in Linux:
 * [How To Use Systemctl to Manage Systemd Services and Units](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
 * [systemd.service — Service unit configuration](https://www.freedesktop.org/software/systemd/man/systemd.service.html)
 * [How To Use Journalctl to View and Manipulate Systemd Logs](https://www.digitalocean.com/community/tutorials/how-to-use-journalctl-to-view-and-manipulate-systemd-logs)
+* [Use systemd to Start a Linux Service at Boot](https://www.linode.com/docs/guides/start-service-at-boot)
 
 ## Notes
 
