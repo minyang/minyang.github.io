@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 '''
 gen_tag.py
@@ -50,7 +50,7 @@ print("total_tags = {}".format(total_tags))
 old_tags = glob.glob(tag_dir + '*.md')
 for tag in old_tags:
     os.remove(tag)
-    
+
 if not os.path.exists(tag_dir):
     os.makedirs(tag_dir)
 
